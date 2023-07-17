@@ -5977,15 +5977,10 @@ int skill_castend_damage_id (struct block_list* src, struct block_list *bl, uint
 					clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);
 					break;
 				}
-				case SHC_FATAL_SHADOW_CROW: {
-					uint8 dir = DIR_NORTHEAST;
-
-					if (bl->x != src->x || bl->y != src->y)
-						dir = map_calc_dir(bl, src->x, src->y);	// dir based on target as we move player based on target location
-
-					// Move the player 1 cell near the target, between the target and the player
-					if (skill_check_unit_movepos(5, src, bl->x + dirx[dir], bl->y + diry[dir], 0, 1))
-						clif_blown(src);
+				case SHC_FATAL_SHADOW_CROW:
+					// Jump to the target before attacking.
+					if (skill_check_unit_movepos(5, src, bl->x, bl->y, 0, 1))
+						skill_blown(src, src, 1, (map_calc_dir(bl, src->x, src->y) + 4) % 8, BLOWN_NONE);
 					clif_skill_nodamage(src, bl, skill_id, skill_lv, 1);// Trigger animation
 					break;
 				case AG_CRYSTAL_IMPACT_ATK:
@@ -8542,20 +8537,6 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case NPC_ANTIMAGIC:
 		clif_skill_nodamage(src,bl,skill_id,skill_lv,
 			sc_start2(src,bl,type,100,skill_lv,skill_id,skill_get_time(skill_id,skill_lv)));
-		break;
-	case NPC_MOVE_COORDINATE:
-		if (src != bl) {
-			int x = src->x, y = src->y;
-			if (unit_movepos(src,bl->x,bl->y,0,0)) {
-				clif_skill_nodamage(src,src,skill_id,skill_lv,1);
-				clif_blown(src);
-				if (unit_movepos(bl,x,y,0,0)) {
-					clif_skill_nodamage(bl,bl,skill_id,skill_lv,1);
-					clif_blown(bl);
-				}
-				map_foreachinallrange(unit_changetarget,src,AREA_SIZE,BL_MOB,bl,src);
-			}
-		}
 		break;
 	case HLIF_AVOID:
 	case HAMI_DEFENCE:
