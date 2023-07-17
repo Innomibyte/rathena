@@ -9769,7 +9769,7 @@ Body:
     Buy: 20
     Weight: 10
     Locations:
-      Right_Hand: true
+      Armor: true
     Flags:
       BuyingStore: true
       DropEffect: CLIENT
@@ -10795,7 +10795,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bCritical,(readparam(bStr)>=110)?40:20;
-      bonus5 bAutoSpellWhenHit,"AM_ACIDTERROR",5,100,BF_WEAPON,1;
+      bonus5 bAutoSpellWhenHit,"AM_ACIDTERROR",5,100,BF_WEAPON,5;
   - Id: 4564
     AegisName: Stalker_Card
     Name: Stalker Gertie Card
@@ -11516,6 +11516,166 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bAbsorbDmgMaxHP2,40;
+  - Id: 4611
+    AegisName: RO_Amis_Card
+    Name: RO Girl Card - Amis
+    Type: Card
+    Weight: 10
+    Locations:
+      Head_Top: true
+      Head_Mid: true
+      Head_Low: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bInt,1;
+  - Id: 4612
+    AegisName: RO_MIA_Card
+    Name: RO Girl Card - Mia
+    Type: Card
+    Weight: 10
+    Locations:
+      Head_Top: true
+      Head_Mid: true
+      Head_Low: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bInt,1;
+  - Id: 4613
+    AegisName: RO_Sobum_Card
+    Name: RO Girl Card - Sobum
+    Type: Card
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bStr,1;
+  - Id: 4614
+    AegisName: RO_Sowoo_Card
+    Name: RO Girl Card - Sowoo
+    Type: Card
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bVit,1;
+  - Id: 4615
+    AegisName: RO_Soyeun_Card
+    Name: RO Girl Card - Soyeun
+    Type: Card
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bDex,1;
+  - Id: 4616
+    AegisName: RO_Sowul_Card
+    Name: RO Girl Card - Sowul
+    Type: Card
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bAgi,1;
+  - Id: 4617
+    AegisName: RO_Yiyi_Card
+    Name: RO Girl Card - Yiyi
+    Type: Card
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bAgi,1;
+  - Id: 4618
+    AegisName: RO_Catcy_Card
+    Name: RO Girl Card - Catcy
+    Type: Card
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bDex,1;
+  - Id: 4619
+    AegisName: RO_Pipi_Card
+    Name: RO Girl Card - Pipi
+    Type: Card
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bStr,1;
+  - Id: 4620
+    AegisName: RO_Yeppy_Card
+    Name: RO Girl Card - Yeppi
+    Type: Card
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bVit,1;
+  - Id: 4621
+    AegisName: RO_Jinyung_Card
+    Name: RO Girl Card - Jinyung
+    Type: Card
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bLuk,1;
+  - Id: 4622
+    AegisName: RO_Dalcom_Card
+    Name: RO Girl Card - Dalcom
+    Type: Card
+    Weight: 10
+    Locations:
+      Both_Accessory: true
+    Flags:
+      DropEffect: CLIENT
+    Trade:
+      NoDrop: true
+    Script: |
+      bonus bLuk,1;
   - Id: 4623
     AegisName: Adventures_Card
     Name: 11th Anniversary Card
@@ -21078,6 +21238,11 @@ Body:
     Name: Emerald Leaf
     Type: Etc
     Weight: 10
+  - Id: 6670
+    AegisName: Woodie_Piece
+    Name: Tree Log
+    Type: Etc
+    Weight: 1
   - Id: 6671
     AegisName: Geffen_Magic_Coin
     Name: Geffen Coin Magic Tournament
@@ -38158,6 +38323,72 @@ Body:
     Script: |
       bonus2 bAddClass,Class_All,10;
       bonus3 bAutoSpell,"NPC_WIDESOULDRAIN",2,5+((getrefine()/3)*10);
+  - Id: 27021
+    AegisName: JP_EV03
+    Name: "[ECO] BurikingRx1 Alma Card"
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus2 bSkillAtk,"NC_BOOSTKNUCKLE",25;
+      if (.@r>=7) {
+        bonus bPerfectHitAddRate,5;
+      }
+  - Id: 27022
+    AegisName: JP_EV04
+    Name: "[ECO] Salamander Alma Card"
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus2 bSubEle,Ele_Fire,20;
+      bonus2 bSubEle,Ele_Dark,20;
+      if (.@r>=7) {
+        bonus bLongAtkDef,10;
+      }
+  - Id: 27023
+    AegisName: JP_EV05
+    Name: "[ECO] MouMou Alma Card"
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus2 bAddItemHealRate,519,900;
+      bonus  bInt,.@r;
+      bonus  bVit,.@r;
+      if (.@r>=7) {
+        bonus  bInt,5;
+        bonus  bVit,5;
+      }
+  - Id: 27024
+    AegisName: JP_EV06
+    Name: "[ECO] MinnieDoe Alma Card"
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus bFlee2,1;
+      bonus bHealPower,.@r;
   - Id: 27025
     AegisName: Lich_Lord_Card
     Name: Lich Lord Card
@@ -38291,6 +38522,71 @@ Body:
       bonus2 bSubEle,Ele_Water,100;
       bonus2 bAddEffWhenHit,Eff_Freeze,5000;
       bonus bMatkRate,10;
+  - Id: 27050
+    AegisName: Anniversary_card1
+    Name: Sky Petite & Penomena Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubRace,RC_Dragon,25;
+      bonus2 bSubRace,RC_Formless,25;
+  - Id: 27051
+    AegisName: Anniversary_card2
+    Name: Anubis & Teddy Bear Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubRace,RC_Angel,25;
+      bonus2 bSubRace,RC_Undead,25;
+  - Id: 27052
+    AegisName: Anniversary_card3
+    Name: Orc Warrior & Rafflesia Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubRace,RC_Brute,25;
+      bonus2 bSubRace,RC_Fish,25;
+  - Id: 27053
+    AegisName: Anniversary_card4
+    Name: Alnoldi & Bigfoot Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubRace,RC_Plant,25;
+      bonus2 bSubRace,RC_Insect,25;
+  - Id: 27054
+    AegisName: Anniversary_card5
+    Name: Khalitzburg & Thara Frog Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Left_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus2 bSubRace,RC_Demon,25;
+      bonus2 bSubRace,RC_DemiHuman,25;
   - Id: 27055
     AegisName: Sorcerer_Card_J
     Name: Sorcerer Celia Card
@@ -42243,6 +42539,20 @@ Body:
     SubType: Enchant
     Script: |
       autobonus "{ bonus bDelayrate,-70; bonus bVariableCastrate,-70; bonus bUseSPrate,-70; }",30,10000,BF_WEAPON|BF_MAGIC,"{}";
+  - Id: 27417
+    AegisName: aegis_27417
+    Name: 2nd Anniversary Card
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Armor: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      bonus bAtkRate,3;
+      bonus bMatkRate,3;
   - Id: 29000
     AegisName: Neev_INT_1
     Name: Rune of Intellect Lv 1
@@ -42613,6 +42923,17 @@ Body:
       hateffect HAT_EF_LJOSALFAR,true;
     UnEquipScript: |
       hateffect HAT_EF_LJOSALFAR,false;
+  - Id: 29045
+    AegisName: Storm
+    Name: Gale
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus2 bAddRace,RC_Fish,15;
+      bonus2 bMagicAddRace,RC_Fish,15;
+      bonus2 bAddEle,Ele_Water,15;
+      bonus2 bMagicAddEle,Ele_Water,15;
+      autobonus "{ bonus bAspdRate,70; bonus bVariableCastrate,-70; bonus bDelayrate,-70; }",5,10000,BF_WEAPON|BF_MAGIC;
   - Id: 29046
     AegisName: Greed
     Name: Greed
@@ -43852,6 +44173,25 @@ Body:
     SubType: Enchant
     Script: |
       skill "AL_TELEPORT",1;
+  - Id: 29230
+    AegisName: JP_EV02
+    Name: "[ECO] Tiny Alma Card"
+    Type: Card
+    Buy: 20
+    Weight: 10
+    Locations:
+      Head_Top: true
+      Head_Mid: true
+      Head_Low: true
+      Armor: true
+      Both_Hand: true
+      Garment: true
+      Shoes: true
+      Both_Accessory: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bAllStats,2;
   - Id: 29238
     AegisName: Evasion10
     Name: Flee+10
@@ -48231,6 +48571,20 @@ Body:
       bonus2 bSkillAtk,"SU_SVG_SPIRIT",5+.@r;
       if (.@r>=10)
          bonus2 bSkillAtk,"SU_SVG_SPIRIT",5;
+  - Id: 300169
+    AegisName: Lucky_Riceball_C
+    Name: Meatball Monster Card
+    Type: Card
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      bonus bDelayrate,-2;
+      bonus bAtkRate,2;
+      bonus bMatkRate,2;
+      bonus bMaxHPrate,1;
   - Id: 300170
     AegisName: MD_Airboat_Card
     Name: Rotten Tree Card
@@ -48560,7 +48914,7 @@ Body:
     Script: |
       bonus bDelayrate,-5;
       bonus bPAtk,1;
-      bonus bSmatk,1;
+      bonus bSMatk,1;
   - Id: 300194
     AegisName: SLD_V_Kimera_Card
     Name: Sealed Venomous Chimera Card
@@ -48864,7 +49218,7 @@ Body:
     Type: Card
     Weight: 10
     Locations:
-      Left_Accessory: true
+      Both_Accessory: true
     Flags:
       DropEffect: CLIENT
     Script: |
@@ -48900,7 +49254,7 @@ Body:
     Type: Card
     Weight: 10
     Locations:
-      Right_Accessory: true
+      Both_Accessory: true
     Flags:
       DropEffect: CLIENT
     Script: |
@@ -49076,7 +49430,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bIgnoreMDefRaceRate,RC_Brute,15;
+      bonus2 bIgnoreMdefRaceRate,RC_Brute,15;
       bonus2 bMagicAddRace,RC_Brute,5*(getrefine()/2);
   - Id: 300238
     AegisName: ILL_Vitata_Card
@@ -50773,7 +51127,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus2 bMagicAtkEle,Ele_Fire,35;
+      bonus2 bMagicAtkEle,Ele_Ghost,35;
       bonus bUseSPrate,10;
   - Id: 300371
     AegisName: Cave_Calmaring_Card
@@ -51994,9 +52348,55 @@ Body:
     Script: |
       bonus bShortAtkRate,30+5*(getrefine()/3);
       bonus bCritical,-5*(readparam(bLuk)/20);
-      if (getiteminfo(getequipid(EQI_HAND_R), ITEMINFO_ARMORLEVEL)==2) {
+      if (getiteminfo(getequipid(EQI_GARMENT), ITEMINFO_ARMORLEVEL)==2) {
          bonus2 bAddClass,Class_Boss,10;
       }
+  - Id: 300479
+    AegisName: aegis_300479
+    Name: "[3rd Anniversary] Agony of Royal Knight Card"
+    Type: Card
+    Weight: 10
+    Locations:
+      Head_Top: true
+      Head_Mid: true
+      Head_Low: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus bHit,-30;
+      bonus2 bAddEle,Ele_Fire,3*(.@r/2);
+      bonus2 bAddEle,Ele_Dark,3*(.@r/2);
+  - Id: 300480
+    AegisName: aegis_300480
+    Name: "[3rd Anniversary] Grudge of Royal Knight Card"
+    Type: Card
+    Weight: 10
+    Locations:
+      Garment: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus2 bSubEle,Ele_All,-30;
+      bonus2 bMagicAddRace,RC_DemiHuman,5*.@r;
+      bonus2 bMagicAddRace,RC_Demon,5*.@r;
+  - Id: 300481
+    AegisName: aegis_300481
+    Name: "[3rd Anniversary] Himmelmez Card"
+    Type: Card
+    Weight: 10
+    Locations:
+      Shoes: true
+    Flags:
+      BuyingStore: true
+      DropEffect: CLIENT
+    Script: |
+      .@r = getrefine();
+      bonus bMaxHPrate,(min(15,.@r)*2);
+      bonus bMaxSPrate,(min(15,.@r)*2);
   - Id: 310000
     AegisName: Ranger_Top2
     Name: Sniper Stone II (Top)
@@ -58112,7 +58512,7 @@ Body:
                bonus bPAtk,3*.@param;
                if (.@g >= ENCHANTGRADE_A) {
                   bonus bCritAtkRate,3*.@param;
-                  bonus bCrate,.@param;
+                  bonus bCRate,.@param;
                }
             }
          }
@@ -58217,7 +58617,7 @@ Body:
                bonus bMaxSPrate,.@param;
                bonus bHealPower,2*.@param;
                if (.@g >= ENCHANTGRADE_A) {
-                  bonus bHplus,.@param;
+                  bonus bHPlus,.@param;
                   bonus bMaxSPrate,.@param;
                }
             }
@@ -58242,10 +58642,10 @@ Body:
             bonus bHealPower,2*.@param;
             if (.@g >= ENCHANTGRADE_B) {
                bonus bSPrecovRate,2*.@param;
-               bonus bHplus,.@param;
+               bonus bHPlus,.@param;
                bonus bMaxSPrate,.@param;
                if (.@g >= ENCHANTGRADE_A) {
-                  bonus bHplus,2*.@param;
+                  bonus bHPlus,2*.@param;
                   bonus bMaxSPrate,2*.@param;
                }
             }
@@ -58270,10 +58670,10 @@ Body:
             bonus bHealPower,2*.@param;
             if (.@g >= ENCHANTGRADE_B) {
                bonus bSPrecovRate,3*.@param;
-               bonus bHplus,2*.@param;
+               bonus bHPlus,2*.@param;
                bonus bMaxSPrate,2*.@param;
                if (.@g >= ENCHANTGRADE_A) {
-                  bonus bHplus,3*.@param;
+                  bonus bHPlus,3*.@param;
                   bonus bMaxSPrate,2*.@param;
                }
             }
@@ -58407,7 +58807,7 @@ Body:
     Script: |
       bonus bCritAtkRate,15;
       bonus bCritical,8;
-      bonus bCrate,1;
+      bonus bCRate,1;
       bonus bPAtk,2;
   - Id: 310707
     AegisName: Star_Of_Spell1
@@ -58502,7 +58902,7 @@ Body:
     Script: |
       bonus bMaxHPrate,2;
       bonus bRes,1;
-      bonus bMres,1;
+      bonus bMRes,1;
   - Id: 310718
     AegisName: Star_Of_Vital2
     Name: Star of Vital Lv2
@@ -58511,7 +58911,7 @@ Body:
     Script: |
       bonus bMaxHPrate,3;
       bonus bRes,2;
-      bonus bMres,2;
+      bonus bMRes,2;
   - Id: 310719
     AegisName: Star_Of_Vital3
     Name: Star of Vital Lv3
@@ -58520,7 +58920,7 @@ Body:
     Script: |
       bonus bMaxHPrate,5;
       bonus bRes,4;
-      bonus bMres,4;
+      bonus bMRes,4;
   - Id: 310720
     AegisName: Star_Of_Vital4
     Name: Star of Vital Lv4
@@ -58529,7 +58929,7 @@ Body:
     Script: |
       bonus bMaxHPrate,7;
       bonus bRes,6;
-      bonus bMres,6;
+      bonus bMRes,6;
   - Id: 310721
     AegisName: Star_Of_Vital5
     Name: Star of Vital Lv5
@@ -58538,7 +58938,7 @@ Body:
     Script: |
       bonus bMaxHPrate,10;
       bonus bRes,10;
-      bonus bMres,10;
+      bonus bMRes,10;
   - Id: 310722
     AegisName: Star_Of_Spirit1
     Name: Star of Spirit Lv1
@@ -58565,7 +58965,7 @@ Body:
     Script: |
       bonus bHealPower,10;
       bonus bMaxSPrate,5;
-      bonus bHplus,1;
+      bonus bHPlus,1;
       bonus bSPrecovRate,15;
   - Id: 310725
     AegisName: Star_Of_Spirit4
@@ -58575,7 +58975,7 @@ Body:
     Script: |
       bonus bHealPower,10;
       bonus bMaxSPrate,7;
-      bonus bHplus,3;
+      bonus bHPlus,3;
       bonus bSPrecovRate,15;
   - Id: 310726
     AegisName: Star_Of_Spirit5
@@ -58585,7 +58985,7 @@ Body:
     Script: |
       bonus bHealPower,15;
       bonus bMaxSPrate,10;
-      bonus bHplus,5;
+      bonus bHPlus,5;
       bonus bSPrecovRate,20;
   - Id: 310727
     AegisName: Nebula_Of_FS1
@@ -59603,7 +60003,7 @@ Body:
                bonus bMaxSPrate,.@param;
                bonus bHealPower,2*.@param;
                if (.@g >= ENCHANTGRADE_A) {
-                  bonus bHplus,.@param;
+                  bonus bHPlus,.@param;
                   bonus bMaxSPrate,2*.@param;
                }
             }
@@ -59627,10 +60027,10 @@ Body:
             bonus bMaxSPrate,.@param;
             bonus bHealPower,2*.@param;
             if (.@g >= ENCHANTGRADE_B) {
-               bonus bHplus,.@param;
+               bonus bHPlus,.@param;
                bonus bMaxSPrate,.@param;
                if (.@g >= ENCHANTGRADE_A) {
-                  bonus bHplus,2*.@param;
+                  bonus bHPlus,2*.@param;
                   bonus bMaxSPrate,2*.@param;
                }
             }
@@ -61002,28 +61402,28 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bCrate,1;
+      bonus bCRate,1;
   - Id: 311089
     AegisName: CRATE_Lv2
     Name: C.RATE Lv2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bCrate,2;
+      bonus bCRate,2;
   - Id: 311090
     AegisName: HPLUS_Lv1
     Name: H.PLUS Lv1
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bHplus,1;
+      bonus bHPlus,1;
   - Id: 311091
     AegisName: HPLUS_Lv2
     Name: H.PLUS Lv2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus bHplus,2;
+      bonus bHPlus,2;
   - Id: 311092
     AegisName: Ice_F_Orb_Str
     Name: Ice Magic Orb (STR)
