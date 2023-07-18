@@ -12127,6 +12127,8 @@
 3254,T_W_O@NPC_WIDESOULDRAIN,attack,680,10,10000,0,60000,no,self,always,0,,,,,,,
 3254,T_W_O@NPC_CRITICALWOUND,attack,673,5,1500,500,45000,no,target,always,,,,,,,,
 
+//PuzzDra Island - *TODO*
+
 // Episode 15.2 - Infinite Space
 3384,MIN_PORING@NPC_EMOTION,loot,197,1,2000,0,5000,yes,self,always,0,2,,,,,,
 3386,MIN_FABRE@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,

@@ -79572,7 +79572,7 @@ Body:
       Rate: 5
   - Id: 3145
     AegisName: MG_KNIGHT_OF_ABYSS_H
-    Name: Abysmal Knight#3
+    Name: Abysmal Knight
     Level: 172
     Hp: 451578
     BaseExp: 18584
@@ -83658,7 +83658,7 @@ Body:
     AttackDelay: 1380
     AttackMotion: 1080
     DamageMotion: 336
-    Ai: 01
+    Ai: 04
   - Id: 3318
     AegisName: PAD_SAPPHILIT
     Name: Sapphilit
@@ -83687,7 +83687,7 @@ Body:
     AttackDelay: 1380
     AttackMotion: 1080
     DamageMotion: 336
-    Ai: 01
+    Ai: 04
   - Id: 3319
     AegisName: PAD_EMELIT
     Name: Emelit
@@ -83716,7 +83716,7 @@ Body:
     AttackDelay: 1380
     AttackMotion: 1080
     DamageMotion: 336
-    Ai: 01
+    Ai: 04
   - Id: 3320
     AegisName: PAD_TOPALIT
     Name: Topalit
@@ -83745,7 +83745,7 @@ Body:
     AttackDelay: 1380
     AttackMotion: 1080
     DamageMotion: 336
-    Ai: 01
+    Ai: 04
   - Id: 3321
     AegisName: PAD_AMELIT
     Name: Amelit
@@ -83774,61 +83774,850 @@ Body:
     AttackDelay: 1380
     AttackMotion: 1080
     DamageMotion: 336
-    Ai: 01
-#  - Id: 3322
-#    AegisName: PAD_METAL_DRAGON
-#  - Id: 3323
-#    AegisName: PAD_M_FLAME_KNIGHT
-#  - Id: 3324
-#    AegisName: PAD_M_ICE_KNIGHT
-#  - Id: 3325
-#    AegisName: PAD_M_STONE_KNIGHT
-#  - Id: 3326
-#    AegisName: PAD_M_LIGHT_KNIGHT
-#  - Id: 3327
-#    AegisName: PAD_M_DARK_KNIGHT
-#  - Id: 3328
-#    AegisName: PAD_C_D_DRAGON
-#  - Id: 3329
-#    AegisName: PAD_ECHIDNA
-#  - Id: 3330
-#    AegisName: PAD_SIREN
-#  - Id: 3331
-#    AegisName: PAD_LILITH
-#  - Id: 3332
-#    AegisName: PAD_HERA
-#  - Id: 3333
-#    AegisName: PAD_RUBYLIT_H
-#  - Id: 3334
-#    AegisName: PAD_SAPPHILIT_H
-#  - Id: 3335
-#    AegisName: PAD_EMELIT_H
-#  - Id: 3336
-#    AegisName: PAD_TOPALIT_H
-#  - Id: 3337
-#    AegisName: PAD_AMELIT_H
-#  - Id: 3338
-#    AegisName: PAD_METAL_DRAGON_H
-#  - Id: 3339
-#    AegisName: PAD_M_FLAME_KNIGHT_H
-#  - Id: 3340
-#    AegisName: PAD_M_ICE_KNIGHT_H
-#  - Id: 3341
-#    AegisName: PAD_M_STONE_KNIGHT_H
-#  - Id: 3342
-#    AegisName: PAD_M_LIGHT_KNIGHT_H
-#  - Id: 3343
-#    AegisName: PAD_M_DARK_KNIGHT_H
-#  - Id: 3344
-#    AegisName: PAD_C_D_DRAGON_H
-#  - Id: 3345
-#    AegisName: PAD_ECHIDNA_H
-#  - Id: 3346
-#    AegisName: PAD_SIREN_H
-#  - Id: 3347
-#    AegisName: PAD_LILITH_H
-#  - Id: 3348
-#    AegisName: PAD_HERA_H
+    Ai: 04
+  - Id: 3322
+    AegisName: PAD_METAL_DRAGON
+    Name: Metal Dragon
+    Level: 80
+    Hp: 3631
+    BaseExp: 586
+    JobExp: 598
+    Attack: 426
+    Attack2: 60
+    Defense: 95
+    MagicDefense: 43
+    Str: 61
+    Agi: 40
+    Vit: 48
+    Int: 40
+    Dex: 78
+    Luk: 31
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Demihuman
+    Element: Undead
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1380
+    AttackMotion: 1080
+    DamageMotion: 336
+    Ai: 04              #Actual value unknown
+  - Id: 3323
+    AegisName: PAD_M_FLAME_KNIGHT
+    Name: Alla Knight
+    Level: 81
+    Hp: 54465
+    BaseExp: 0
+    JobExp: 0
+    Attack: 361
+    Attack2: 48
+    Defense: 101
+    MagicDefense: 29
+    Str: 74
+    Agi: 41
+    Vit: 57
+    Int: 27
+    Dex: 65
+    Luk: 27
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3324
+    AegisName: PAD_M_ICE_KNIGHT
+    Name: Alla Cavalier
+    Level: 81
+    Hp: 54465
+    BaseExp: 0
+    JobExp: 0
+    Attack: 361
+    Attack2: 48
+    Defense: 101
+    MagicDefense: 29
+    Str: 74
+    Agi: 41
+    Vit: 57
+    Int: 27
+    Dex: 65
+    Luk: 27
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3325
+    AegisName: PAD_M_STONE_KNIGHT
+    Name: Alla Templar
+    Level: 81
+    Hp: 54465
+    BaseExp: 0
+    JobExp: 0
+    Attack: 361
+    Attack2: 48
+    Defense: 101
+    MagicDefense: 29
+    Str: 74
+    Agi: 41
+    Vit: 57
+    Int: 27
+    Dex: 65
+    Luk: 27
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3326
+    AegisName: PAD_M_LIGHT_KNIGHT
+    Name: Alla Rapier
+    Level: 81
+    Hp: 54465
+    BaseExp: 0
+    JobExp: 0
+    Attack: 361
+    Attack2: 48
+    Defense: 101
+    MagicDefense: 29
+    Str: 74
+    Agi: 41
+    Vit: 57
+    Int: 27
+    Dex: 65
+    Luk: 27
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Holy
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3327
+    AegisName: PAD_M_DARK_KNIGHT
+    Name: Alla Champion
+    Level: 81
+    Hp: 54465
+    BaseExp: 0
+    JobExp: 0
+    Attack: 361
+    Attack2: 48
+    Defense: 101
+    MagicDefense: 29
+    Str: 74
+    Agi: 41
+    Vit: 57
+    Int: 27
+    Dex: 65
+    Luk: 27
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3328
+    AegisName: PAD_C_D_DRAGON
+    Name: KT Dragon #No idea what his name is supposed to be
+    Level: 82
+    Hp: 1089300
+    BaseExp: 0
+    JobExp: 0
+    Attack: 297
+    Attack2: 30
+    Defense: 123
+    MagicDefense: 30
+    Str: 63
+    Agi: 20
+    Vit: 35
+    Int: 25
+    Dex: 62
+    Luk: 30
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demihuman
+    Element: Undead
+    ElementLevel: 2
+    WalkSpeed: 230
+    AttackDelay: 1728
+    AttackMotion: 720
+    DamageMotion: 576
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3329
+    AegisName: PAD_ECHIDNA
+    Name: Echidna
+    Level: 83
+    Hp: 544650
+    BaseExp: 0
+    JobExp: 0
+    Attack: 340
+    Attack2: 41
+    Defense: 69
+    MagicDefense: 44
+    Str: 71
+    Agi: 39
+    Vit: 50
+    Int: 31
+    Dex: 125
+    Luk: 12
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 155
+    AttackDelay: 972
+    AttackMotion: 672
+    DamageMotion: 470
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3330
+    AegisName: PAD_SIREN
+    Name: Siren
+    Level: 83
+    Hp: 544650
+    BaseExp: 0
+    JobExp: 0
+    Attack: 340
+    Attack2: 41
+    Defense: 69
+    MagicDefense: 44
+    Str: 71
+    Agi: 39
+    Vit: 50
+    Int: 31
+    Dex: 125
+    Luk: 12
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Undead
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 155
+    AttackDelay: 972
+    AttackMotion: 672
+    DamageMotion: 470
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3331
+    AegisName: PAD_LILITH
+    Name: Lilith
+    Level: 83
+    Hp: 544650
+    BaseExp: 0
+    JobExp: 0
+    Attack: 340
+    Attack2: 41
+    Defense: 69
+    MagicDefense: 44
+    Str: 71
+    Agi: 39
+    Vit: 50
+    Int: 31
+    Dex: 125
+    Luk: 12
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 155
+    AttackDelay: 972
+    AttackMotion: 672
+    DamageMotion: 470
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3332
+    AegisName: PAD_HERA
+    Name: Hera
+    Level: 85
+    Hp: 2178600
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1624
+    Attack2: 1782
+    Defense: 124
+    MagicDefense: 269
+    Str: 98
+    Agi: 102
+    Vit: 96
+    Int: 142
+    Dex: 173
+    Luk: 102
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 125
+    AttackDelay: 868
+    AttackMotion: 768
+    DamageMotion: 288
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3333
+    AegisName: PAD_RUBYLIT_H
+    Name: Rubylit
+    Level: 130
+    Hp: 47567
+    BaseExp: 2938
+    JobExp: 2310
+    Attack: 1014
+    Attack2: 703
+    Defense: 73
+    MagicDefense: 43
+    Str: 97
+    Agi: 71
+    Vit: 55
+    Int: 143
+    Dex: 137
+    Luk: 72
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    Element: Fire
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1380
+    AttackMotion: 1080
+    DamageMotion: 336
+    Ai: 04              #Actual value unknown
+  - Id: 3334
+    AegisName: PAD_SAPPHILIT_H
+    Name: Sapphilit
+    Level: 130
+    Hp: 47567
+    BaseExp: 2938
+    JobExp: 2310
+    Attack: 1014
+    Attack2: 703
+    Defense: 73
+    MagicDefense: 43
+    Str: 97
+    Agi: 71
+    Vit: 55
+    Int: 143
+    Dex: 137
+    Luk: 72
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1380
+    AttackMotion: 1080
+    DamageMotion: 336
+    Ai: 04              #Actual value unknown
+  - Id: 3335
+    AegisName: PAD_EMELIT_H
+    Name: Emelit
+    Level: 130
+    Hp: 47567
+    BaseExp: 2938
+    JobExp: 2310
+    Attack: 1014
+    Attack2: 703
+    Defense: 73
+    MagicDefense: 43
+    Str: 97
+    Agi: 71
+    Vit: 55
+    Int: 143
+    Dex: 137
+    Luk: 72
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1380
+    AttackMotion: 1080
+    DamageMotion: 336
+    Ai: 04              #Actual value unknown
+  - Id: 3336
+    AegisName: PAD_TOPALIT_H
+    Name: Topalit
+    Level: 130
+    Hp: 47567
+    BaseExp: 2938
+    JobExp: 2310
+    Attack: 1014
+    Attack2: 703
+    Defense: 73
+    MagicDefense: 43
+    Str: 97
+    Agi: 71
+    Vit: 55
+    Int: 143
+    Dex: 137
+    Luk: 72
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    Element: Holy
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1380
+    AttackMotion: 1080
+    DamageMotion: 336
+    Ai: 04              #Actual value unknown
+  - Id: 3337
+    AegisName: PAD_AMELIT_H
+    Name: Amelit
+    Level: 130
+    Hp: 47567
+    BaseExp: 2938
+    JobExp: 2310
+    Attack: 1014
+    Attack2: 703
+    Defense: 73
+    MagicDefense: 43
+    Str: 97
+    Agi: 71
+    Vit: 55
+    Int: 143
+    Dex: 137
+    Luk: 72
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Formless
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1380
+    AttackMotion: 1080
+    DamageMotion: 336
+    Ai: 04              #Actual value unknown
+  - Id: 3338
+    AegisName: PAD_METAL_DRAGON_H
+    Name: Metal Dragon
+    Level: 130
+    Hp: 47567
+    BaseExp: 2938
+    JobExp: 2310
+    Attack: 1014
+    Attack2: 703
+    Defense: 73
+    MagicDefense: 43
+    Str: 97
+    Agi: 71
+    Vit: 55
+    Int: 143
+    Dex: 137
+    Luk: 72
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Dragon
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1380
+    AttackMotion: 1080
+    DamageMotion: 336
+    Ai: 04              #Actual value unknown
+  - Id: 3339
+    AegisName: PAD_M_FLAME_KNIGHT_H
+    Name: Alla Knight
+    Level: 131
+    Hp: 713505
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1100
+    Attack2: 325
+    Defense: 85
+    MagicDefense: 29
+    Str: 99
+    Agi: 95
+    Vit: 70
+    Int: 124
+    Dex: 155
+    Luk: 80
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3340
+    AegisName: PAD_M_ICE_KNIGHT_H
+    Name: Alla Cavalier
+    Level: 131
+    Hp: 713505
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1100
+    Attack2: 325
+    Defense: 85
+    MagicDefense: 29
+    Str: 99
+    Agi: 95
+    Vit: 70
+    Int: 124
+    Dex: 155
+    Luk: 80
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Water
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3341
+    AegisName: PAD_M_STONE_KNIGHT_H
+    Name: Alla Templar
+    Level: 131
+    Hp: 713505
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1100
+    Attack2: 325
+    Defense: 85
+    MagicDefense: 29
+    Str: 99
+    Agi: 95
+    Vit: 70
+    Int: 124
+    Dex: 155
+    Luk: 80
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3342
+    AegisName: PAD_M_LIGHT_KNIGHT_H
+    Name: Alla Rapier
+    Level: 131
+    Hp: 713505
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1100
+    Attack2: 325
+    Defense: 85
+    MagicDefense: 29
+    Str: 99
+    Agi: 95
+    Vit: 70
+    Int: 124
+    Dex: 155
+    Luk: 80
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Holy
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3343
+    AegisName: PAD_M_DARK_KNIGHT_H
+    Name: Alla Champion
+    Level: 131
+    Hp: 713505
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1100
+    Attack2: 325
+    Defense: 85
+    MagicDefense: 29
+    Str: 99
+    Agi: 95
+    Vit: 70
+    Int: 124
+    Dex: 155
+    Luk: 80
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 146
+    AttackDelay: 1350
+    AttackMotion: 1200
+    DamageMotion: 432
+    Ai: 04              #Actual value unknown
+    Modes:
+      IgnoreMagic: true
+      IgnoreMelee: true
+      IgnoreMisc: true
+      IgnoreRanged: true
+  - Id: 3344
+    AegisName: PAD_C_D_DRAGON_H
+    Name: KT Dragon #No idea what his name is supposed to be
+    Level: 132
+    Hp: 14270100
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1016
+    Attack2: 286
+    Defense: 112
+    MagicDefense: 30
+    Str: 149
+    Agi: 34
+    Vit: 82
+    Int: 55
+    Dex: 143
+    Luk: 67
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Dragon
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 230
+    AttackDelay: 1728
+    AttackMotion: 720
+    DamageMotion: 576
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3345
+    AegisName: PAD_ECHIDNA_H
+    Name: Echidna
+    Level: 133
+    Hp: 7135050
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1151
+    Attack2: 218
+    Defense: 80
+    MagicDefense: 44
+    Str: 99
+    Agi: 92
+    Vit: 72
+    Int: 122
+    Dex: 161
+    Luk: 76
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 2
+    WalkSpeed: 155
+    AttackDelay: 972
+    AttackMotion: 672
+    DamageMotion: 470
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3346
+    AegisName: PAD_SIREN_H
+    Name: Siren
+    Level: 133
+    Hp: 7135050
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1151
+    Attack2: 218
+    Defense: 80
+    MagicDefense: 44
+    Str: 99
+    Agi: 92
+    Vit: 72
+    Int: 122
+    Dex: 161
+    Luk: 76
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Water
+    ElementLevel: 2
+    WalkSpeed: 155
+    AttackDelay: 972
+    AttackMotion: 672
+    DamageMotion: 470
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3347
+    AegisName: PAD_LILITH_H
+    Name: Lilith
+    Level: 133
+    Hp: 7135050
+    BaseExp: 0
+    JobExp: 0
+    Attack: 1151
+    Attack2: 218
+    Defense: 80
+    MagicDefense: 44
+    Str: 99
+    Agi: 92
+    Vit: 72
+    Int: 122
+    Dex: 161
+    Luk: 76
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 155
+    AttackDelay: 972
+    AttackMotion: 672
+    DamageMotion: 470
+    Ai: 21              #Actual value unknown
+    Class: Boss
+  - Id: 3348
+    AegisName: PAD_HERA_H
+    Name: Hera
+    Level: 135
+    Hp: 28540200
+    BaseExp: 0
+    JobExp: 0
+    Attack: 6108
+    Attack2: 2662
+    Defense: 364
+    MagicDefense: 269
+    Str: 165
+    Agi: 153
+    Vit: 171
+    Int: 136
+    Dex: 278
+    Luk: 72
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Dark
+    ElementLevel: 1
+    WalkSpeed: 125
+    AttackDelay: 868
+    AttackMotion: 768
+    DamageMotion: 288
+    Ai: 21              #Actual value unknown
+    Class: Boss
   - Id: 3349
     AegisName: PAD_MYTHLIT
     Name: Mythlit
@@ -83857,7 +84646,7 @@ Body:
     AttackDelay: 1380
     AttackMotion: 1080
     DamageMotion: 336
-    Ai: 01
+    Ai: 04
 #  - Id: 3350
 #    AegisName: PAD_TYRRA
 #  - Id: 3351
