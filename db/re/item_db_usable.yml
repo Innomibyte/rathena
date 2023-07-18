@@ -55562,9 +55562,11 @@ Body:
     AegisName: Pororoca_Shoes_Bundle_A
     Name: Pororoca Shoes Bundle A
     Type: Usable
+    Weight: 0
     Flags:
       Container: true
     Trade:
+      Override: 100
       NoDrop: true
       NoTrade: true
       NoSell: true
