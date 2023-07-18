@@ -40244,3 +40244,34 @@ Body:
       bonus2 bAddSize,Size_Large,15;
       bonus2 bMagicAddSize,Size_Medium,15;
       bonus2 bMagicAddSize,Size_Large,15;
+  - Combos:
+      - Combo:
+          - Ivory_Mail    # 15168
+          - Hardrock_Mommos_Card    # 4462
+    Script: |
+      .@v = readparam(bVit);
+      bonus bMaxHPrate,.@v/10;
+      bonus bVit,.@v/10;
+      bonus bNoKnockback;
+  - Combos:
+      - Combo:
+          - Ivory_Mail    # 15168
+          - Ivory_Lance    # 1483
+      - Combo:
+          - Ivory_Mail    # 15168
+          - Ivory_Knife    # 13039
+      - Combo:
+          - Ivory_Mail    # 15168
+          - Ivory_Knife_    # 13082
+    Script: |
+      bonus bAgi,3;
+      bonus bAspdRate,7;
+      bonus3 bAutoSpell,"NPC_CRITICALWOUND",1,200;
+  - Combos:
+      - Combo:
+          - Ivory_Mail    # 15168
+          - Picky__Card    # 4011
+    Script: |
+      bonus bVit,9;
+      bonus bMaxHP,1900;
+      bonus3 bAutoSpellWhenHit,"WL_SUMMONWB",5,50;
