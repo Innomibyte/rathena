@@ -13131,6 +13131,9 @@ Body:
       - Combo:
           - BadgeOfProntera__J
           - ShieldOfGuardsman_J
+      - Combo:
+          - EvidenceOfGlory
+          - ShieldOfGuardsman_J
     Script: |
       bonus bFlee2,10;
   - Combos:
@@ -40136,4 +40139,57 @@ Body:
       bonus2 bMagicAtkEle,Ele_All,3;
       if (.@rg>=9 && .@rs>=9) {
         bonus bFixedCast,-500;
+      }
+  - Combos:
+      - Combo:
+          - B_Celine_D_LT_TW    # 450272
+          - XM_Celine_Kimi_Card    # 31023
+    Script: |
+      autobonus "{ bonus bDelayrate,50; bonus bMatkRate,25; }",20,10000,BF_MAGIC,"{ transform 2996,10000; }";
+      bonus5 bAutoSpell,"AB_VITUPERATUM",1,80,BF_MAGIC;
+  - Combos:
+      - Combo:
+          - B_Celine_D_LT_TW    # 450272
+          - Evilspirit_Gloves    # 2980
+    Script: |
+      bonus bMatk,100;
+      bonus3 bAutoSpell,"WL_SOULEXPANSION",5,50;
+      bonus3 bAutoSpell,"AG_SOUL_VC_STRIKE",3,50;
+      bonus5 bAutoSpell,"WL_TELEKINESIS_INTENSE",3,10,BF_MAGIC;
+  - Combos:
+      - Combo:
+          - B_Celine_D_LT_TW    # 450272
+          - Celines_Ribbon    # 18849
+    Script: |
+      .@rh = getequiprefinerycnt(EQI_HEAD_TOP);
+      bonus2 bSubRace,RC_DemiHuman,12;
+      bonus2 bSubRace,RC_Player_Human,12;
+      bonus2 bSubRace,RC_Player_Doram,12;
+      bonus bSMatk,.@rh/2;
+      if (.@rh>=12) {
+        bonus2 bMagicAddClass,Class_Boss,10;
+      }
+  - Combos:
+      - Combo:
+          - B_Celine_D_LT_TW    # 450272
+          - Celine_Brooch    # 28513
+      - Combo:
+          - B_Celine_D_LT_TW    # 450272
+          - Celine_Brooch_K    # 32237
+    Script: |
+      .@rh = getequiprefinerycnt(EQI_ARMOR);
+      bonus bMatk,8*.@rh;
+      if (.@rh>=11) {
+        bonus2 bMagicAtkEle,Ele_Wind,10;
+        bonus2 bMagicAtkEle,Ele_Water,10;
+        bonus2 bMagicAtkEle,Ele_Fire,10;
+        bonus2 bMagicAtkEle,Ele_Earth,10;
+        bonus2 bMagicAtkEle,Ele_Poison,10;
+        bonus2 bMagicAddEle,Ele_All,10;
+      } else if (.@rh>=9) {
+        bonus2 bMagicAtkEle,Ele_Wind,10;
+        bonus2 bMagicAtkEle,Ele_Water,10;
+        bonus2 bMagicAtkEle,Ele_Fire,10;
+        bonus2 bMagicAtkEle,Ele_Earth,10;
+        bonus2 bMagicAtkEle,Ele_Poison,10;
       }
