@@ -103758,18 +103758,207 @@ Body:
 #    AegisName: G_ILL_STROUF
 #  - Id: 20885
 #    AegisName: G_ILL_PHEN
-#  - Id: 20886
-#    AegisName: MD_AIRBOAT_TREE
-#  - Id: 20887
-#    AegisName: MD_AIRBOAT_PORING
-#  - Id: 20888
-#    AegisName: MD_AIRBOAT_WORM
-#  - Id: 20889
-#    AegisName: MD_AIRBOAT_LEECH
-#  - Id: 20890
-#    AegisName: MD_AIRBOAT_MOS
-#  - Id: 20891
-#    AegisName: MD_AIRBOAT_BOSS
+  - Id: 20886
+    AegisName: MD_Airboat_Tree
+    Name: Rotten Wood
+    Level: 236
+    Hp: 17421722
+    BaseExp: 280335
+    JobExp: 193287
+    Attack: 8133
+    Attack2: 1864
+    Defense: 467
+    MagicDefense: 104
+    Str: 257
+    Agi: 234
+    Vit: 332
+    Int: 36
+    Dex: 185
+    Luk: 306
+    AttackRange: 7
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Plant
+    Element: Dark
+    ElementLevel: 4
+    WalkSpeed: 1000
+    AttackDelay: 841
+    AttackMotion: 840
+    DamageMotion: 360
+    Ai: 10
+    Drops:
+    - Item: MD_Airboat_Tree_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20887
+    AegisName: MD_Airboat_Poring
+    Name: Melted Poring
+    Level: 230
+    Hp: 13295524
+    BaseExp: 274550
+    JobExp: 182144
+    Attack: 7922
+    Attack2: 1063
+    Defense: 307
+    MagicDefense: 53
+    Str: 241
+    Agi: 103
+    Vit: 289
+    Int: 54
+    Dex: 148
+    Luk: 209
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Plant
+    Element: Poison
+    ElementLevel: 3
+    WalkSpeed: 350
+    AttackDelay: 1672
+    AttackMotion: 672
+    DamageMotion: 480
+    Ai: 04
+    Drops:
+    - Item: MD_Airboat_Poring_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20888
+    AegisName: MD_Airboat_Worm
+    Name: Grave Worm
+    Level: 238
+    Hp: 18797121
+    Sp: 0
+    BaseExp: 284018
+    JobExp: 194596
+    Attack: 10339
+    Attack2: 2055
+    Defense: 607
+    MagicDefense: 110
+    Str: 407
+    Agi: 122
+    Vit: 379
+    Int: 87
+    Dex: 107
+    Luk: 201
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Insect
+    Element: Poison
+    ElementLevel: 4
+    WalkSpeed: 300
+    AttackDelay: 1197
+    AttackMotion: 1200
+    DamageMotion: 540
+    Ai: 21
+    Drops:
+    - Item: MD_Airboat_Worm_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20889
+    AegisName: MD_AIRBOAT_LEECH
+    Name: Brain Sucker
+    Level: 235
+    Hp: 16734022
+    BaseExp: 279566
+    JobExp: 186455
+    Attack: 9307
+    Attack2: 1422
+    Defense: 458
+    MagicDefense: 88
+    Str: 237
+    Agi: 291
+    Vit: 154
+    Int: 131
+    Dex: 299
+    Luk: 102
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Insect
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 200
+    AttackDelay: 1792
+    AttackMotion: 792
+    DamageMotion: 336
+    Ai: 21 #placeholder
+    Drops:
+    - Item: MD_Airboat_Leech_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20890
+    AegisName: MD_Airboat_Mos
+    Name: Moskillro
+    Level: 233
+    Hp: 15358623
+    BaseExp: 277940
+    JobExp: 186854
+    Attack: 8653
+    Attack2: 1399
+    Defense: 405
+    MagicDefense: 61
+    Str: 223
+    Agi: 273
+    Vit: 226
+    Int: 175
+    Dex: 289
+    Luk: 137
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Insect
+    Element: Wind
+    ElementLevel: 3
+    WalkSpeed: 150
+    AttackDelay: 676
+    AttackMotion: 576
+    DamageMotion: 480
+    Ai: 04
+    Drops:
+    - Item: MD_Airboat_Mos_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20891
+    AegisName: MD_Airboat_Boss
+    Name: Unidentified Creature
+    Level: 240
+    Hp: 1843970467
+    BaseExp: 3860254
+    JobExp: 2671730
+    Attack: 12853
+    Attack2: 3386
+    Defense: 665
+    MagicDefense: 80
+    Str: 475
+    Agi: 196
+    Vit: 409
+    Int: 151
+    Dex: 156
+    Luk: 138
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 3
+    WalkSpeed: 150
+    AttackDelay: 312
+    AttackMotion: 1200
+    DamageMotion: 432
+    DamageTaken: 10
+    Ai: 21
+    Class: Boss
+    Drops:
+    - Item: Unknown_Creature_Card
+      Rate: 1
+      StealProtected: true
 #  - Id: 20892
 #    AegisName: MD_SAKRAY
 #  - Id: 20893
