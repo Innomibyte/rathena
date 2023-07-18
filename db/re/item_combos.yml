@@ -40304,3 +40304,22 @@ Body:
       if (getequiprefinerycnt(EQI_ARMOR)>=9 && getequiprefinerycnt(EQI_GARMENT)>=9) {
         bonus bAspdRate,5;
       }
+  - Combos:
+      - Combo:
+          - Raider_Cloth    # 450212
+          - Raider_Boots    # 470118
+          - Raider_Glove    # 490195
+          - Raider_Muffler    # 480164
+    Script: |
+      if (BaseLevel>100) {
+        bonus bAtk,10;
+        bonus bHit,10;
+      } else {
+        bonus bAtk,BaseLevel/10;
+        bonus bHit,BaseLevel/10;
+      }
+      bonus bAllStats,1;
+      bonus bFlee,5;
+      bonus bDex,1;
+      bonus bAgi,1;
+      bonus bAtkRate,3;
