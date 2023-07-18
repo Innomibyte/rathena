@@ -40193,3 +40193,54 @@ Body:
         bonus2 bMagicAtkEle,Ele_Earth,10;
         bonus2 bMagicAtkEle,Ele_Poison,10;
       }
+  - Combos:
+      - Combo:
+          - Thanatos_Sword_FA    # 480324
+          - Dolor_HatK_LT    # 400465
+    Script: |
+      .@rh = getequiprefinerycnt(EQI_HEAD_TOP);
+      bonus bVariableCastrate,-10;
+      if (.@rh>=11) {
+        bonus2 bAddEle,Ele_Holy,20;
+        bonus2 bAddEle,Ele_Dark,20;
+        bonus2 bMagicAddEle,Ele_Holy,20;
+        bonus2 bMagicAddEle,Ele_Dark,20;
+        bonus2 bAddRace,RC_Dragon,15;
+        bonus2 bAddRace,RC_Angel,15;
+        bonus2 bMagicAddRace,RC_Dragon,15;
+        bonus2 bMagicAddRace,RC_Angel,15;
+        bonus2 bAddSize,Size_Medium,15;
+        bonus2 bAddSize,Size_Large,15;
+        bonus2 bMagicAddSize,Size_Medium,15;
+        bonus2 bMagicAddSize,Size_Large,15;
+      } else if (.@rh>=9) {
+        bonus2 bAddEle,Ele_Holy,20;
+        bonus2 bAddEle,Ele_Dark,20;
+        bonus2 bMagicAddEle,Ele_Holy,20;
+        bonus2 bMagicAddEle,Ele_Dark,20;
+        bonus2 bAddRace,RC_Dragon,15;
+        bonus2 bAddRace,RC_Angel,15;
+        bonus2 bMagicAddRace,RC_Dragon,15;
+        bonus2 bMagicAddRace,RC_Angel,15;
+      } else if (.@rh>=7) {
+        bonus2 bAddEle,Ele_Holy,20;
+        bonus2 bAddEle,Ele_Dark,20;
+        bonus2 bMagicAddEle,Ele_Holy,20;
+        bonus2 bMagicAddEle,Ele_Dark,20;
+      }
+  - Combos:
+      - Combo:
+          - Thanatos_Sword_FA    # 480324
+          - Red_Force_Pendant_LT    # 490382
+      - Combo:
+          - Thanatos_Sword_FA    # 480324
+          - Blue_Mental_Pendant_LT    # 490383
+    Script: |
+      bonus bAtk,50;
+      bonus bMatk,50;
+      bonus bPAtk,3;
+      bonus bSMatk,3;
+      bonus2 bAddSize,Size_Medium,15;
+      bonus2 bAddSize,Size_Large,15;
+      bonus2 bMagicAddSize,Size_Medium,15;
+      bonus2 bMagicAddSize,Size_Large,15;
