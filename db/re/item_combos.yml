@@ -40275,3 +40275,32 @@ Body:
       bonus bVit,9;
       bonus bMaxHP,1900;
       bonus3 bAutoSpellWhenHit,"WL_SUMMONWB",5,50;
+  - Combos:
+      - Combo:
+          - aegis_450228    # 450228
+          - aegis_480212    # 480212
+          - aegis_470152    # 470152
+    Script: |
+      bonus bVariableCastrate,-5;
+      if (getequiprefinerycnt(EQI_ARMOR)>=9 && getequiprefinerycnt(EQI_GARMENT)>=9 && getequiprefinerycnt(EQI_SHOES)>=9) {
+        bonus bVariableCastrate,-5;
+      }
+  - Combos:
+      - Combo:
+          - aegis_450228    # 450228
+          - aegis_470152    # 470152
+    Script: |
+      bonus bLongAtkRate,5;
+      if (getequiprefinerycnt(EQI_ARMOR)>=9 && getequiprefinerycnt(EQI_SHOES)>=9) {
+        bonus bLongAtkRate,5;
+      }
+  - Combos:
+      - Combo:
+          - aegis_450228    # 450228
+          - aegis_480212    # 480212
+    Script: |
+      bonus bAtk,10;
+      bonus bMatk,10;
+      if (getequiprefinerycnt(EQI_ARMOR)>=9 && getequiprefinerycnt(EQI_GARMENT)>=9) {
+        bonus bAspdRate,5;
+      }
