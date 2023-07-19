@@ -1852,7 +1852,7 @@ Body:
       - Item: C_L_RibbonMuff_Black
       - Item: C_Black_Cat_Ears_Beret
       - Item: C_Teardrop
-      - Item: C_Watery_Eyes
+#      - Item: C_Watery_Eyes
       - Item: C_Heart_Stick_Choco
       - Item: C_Chocolate_Bomb
       - Item: C_Charm_Of_Flame_Heart
