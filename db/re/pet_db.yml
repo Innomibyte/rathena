@@ -1450,7 +1450,7 @@ Body:
   - Mob: FARMILIAR
     TameItem: Fruits_Set_Trap
     EggItem: Farmiliar_Egg
-    FoodItem: aegis_1000889
+    FoodItem: Mixed_Fruits_Juice
     Fullness: 3
     IntimacyFed: 50
     CaptureRate: 2000

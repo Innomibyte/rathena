@@ -1893,9 +1893,6 @@
 	export_constant(SC_RUSH_QUAKE1);
 	export_constant(SC_RUSH_QUAKE2);
 
-	export_constant(SC_RUSH_QUAKE1);
-	export_constant(SC_RUSH_QUAKE2);
-
 	// Hyper Novice
 	export_constant(SC_SHIELDCHAINRUSH);
 	export_constant(SC_MISTYFROST);
@@ -7004,6 +7001,34 @@
 	export_constant(IG_THOUGHTFUL_HAT_BOX);
 	export_constant(IG_DUN_VOUCHER_BOX1);
 	export_constant(IG_DUN_VOUCHER_BOX2);
+	export_constant(IG_BS_ITEM_M_S_57);
+	export_constant(IG_BS_ITEM_M_S_58);
+	export_constant(IG_BS_ITEM_M_S_59);
+	export_constant(IG_BS_ITEM_M_S_59);
+	export_constant(IG_BS_ITEM_M_S_59);
+	export_constant(IG_MONTHLY_PACKAGE_1);
+	export_constant(IG_MONTHLY_PACKAGE_2);
+	export_constant(IG_MONTHLY_PACKAGE_3);
+	export_constant(IG_MONTHLY_BUFF_PACKAGE);
+	export_constant(IG_MONTHLY_BATTLE_PACKAGE);
+	export_constant(IG_SCROLL_SEALED_DARK_LORD);
+	export_constant(IG_SEALED_F_BISHOP_SCROLL);
+	export_constant(IG_OLD_HAT_BOX_);
+	export_constant(IG_SCROLL_TURTLE_GENERAL_SEALED);
+	export_constant(IG_SEALED_BACSOJIN_SCROLL);
+	export_constant(IG_COSTUME_FESTIVAL_BOX_II);
+	export_constant(IG_SEALED_PHARAOH_SCROLL);
+	export_constant(IG_SEALED_GENERAL_EGNIGEM_SCROLL);
+	export_constant(IG_WOLFKING_SCROLL);
+	export_constant(IG_KINGS_GIFT);
+	export_constant(IG_80LVUP);
+	export_constant(IG_NEW_YEAR_GIFT_BOX);
+	export_constant(IG_LUCKY_BAG_OF_NEW_ERA);
+	export_constant(IG_MEMORIAL_BOX);
+	export_constant(IG_WET_CARDALBUM);
+	export_constant(IG_SEALED_M_FLOWER_SCROLL);
+	export_constant(IG_QUESTION_BOX);
+	export_constant(IG_GOLDEN_CARD);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);

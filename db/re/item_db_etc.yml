@@ -51354,7 +51354,7 @@ Body:
       bonus2 bMagicAtkEle,Ele_Undead,100;
       bonus2 bSubEle,Ele_All,-30;
   - Id: 300383
-    AegisName: MD_Geffen_Saph3
+    AegisName: FightingSpirit_of_Veins
     Name: Veins Fighting Spirit
     Type: Card
     SubType: Enchant
@@ -51364,7 +51364,7 @@ Body:
       bonus2 bAddEle,Ele_Ghost,10;
       bonus2 bMagicAddEle,Ele_Ghost,10;
   - Id: 300384
-    AegisName: MD_Geffen_Embe3
+    AegisName: TheExorcist_Of_Veins
     Name: Veins Exorcist
     Type: Card
     SubType: Enchant
