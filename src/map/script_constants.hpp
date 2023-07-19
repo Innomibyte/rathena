@@ -7004,8 +7004,6 @@
 	export_constant(IG_BS_ITEM_M_S_57);
 	export_constant(IG_BS_ITEM_M_S_58);
 	export_constant(IG_BS_ITEM_M_S_59);
-	export_constant(IG_BS_ITEM_M_S_59);
-	export_constant(IG_BS_ITEM_M_S_59);
 	export_constant(IG_MONTHLY_PACKAGE_1);
 	export_constant(IG_MONTHLY_PACKAGE_2);
 	export_constant(IG_MONTHLY_PACKAGE_3);
