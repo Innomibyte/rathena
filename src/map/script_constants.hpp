@@ -7027,6 +7027,7 @@
 	export_constant(IG_SEALED_M_FLOWER_SCROLL);
 	export_constant(IG_QUESTION_BOX);
 	export_constant(IG_GOLDEN_CARD);
+	export_constant(IG_IRO_JUN_COSTUME_BOX);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);

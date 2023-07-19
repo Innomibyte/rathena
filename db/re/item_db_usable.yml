@@ -35264,6 +35264,20 @@ Body:
       NoAuction: true
     Script: |
       percentheal 20,0;
+  - Id: 14947
+    AegisName: iRO_Jun_Costume_Box
+    Name: Anniversary 2018 Costume Box
+    Type: Cash
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Script: |
+      getrandgroupitem(IG_IRO_JUN_COSTUME_BOX,1);
   - Id: 16100
     AegisName: Angry_Mouth_C_Box
     Name: Angry Mouth Box

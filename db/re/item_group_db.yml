@@ -52867,3 +52867,27 @@ Body:
             Rate: 101
           - Item: CorruptionRootH_Card
             Rate: 10
+  - Group: IRO_JUN_COSTUME_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Pope_Sitting_Head
+            Rate: 60
+          - Item: C_SeraphimCoronet
+            Rate: 60
+          - Item: C_Toy_Syringe
+            Rate: 60
+          - Item: C_Pale_Moon_Hat
+            Rate: 60
+          - Item: C_Sting_Silk_Ribbon
+            Rate: 60
+          - Item: C_Lolita_Two_Side_Up
+            Rate: 60
+          - Item: C_Blue_Frill_Ribbon
+            Rate: 60
+          - Item: C_White_Cat
+            Rate: 60
+          - Item: C_L_RibbonMuff_Black
+            Rate: 60
+          - Item: C_Blue_Rose_Eyepatch
+            Rate: 60
