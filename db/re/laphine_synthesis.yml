@@ -1502,7 +1502,7 @@ Body:
       - Item: Miyabi_Ningyo_Egg
       - Item: Leaf_Cat_Egg
       - Item: Dark_Priest_Egg
-  - Item: Nyang_Costume_Recipe
+      - Item: Nyang_Costume_Recipe
       - Item: Farmiliar_Egg
   - Item: Costume_Exchange_Box
     RewardGroup: COSTUME_EXCHANGE_BOX

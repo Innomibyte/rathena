@@ -37146,19 +37146,19 @@ Body:
   - Combos:
       - Combo:
           - aegis_312400   # 312400
-          - aegis_311433   # 311433
+          - Guillcross_Top3   # 311433
     Script: |
       bonus2 bSkillAtk,"SHC_IMPACT_CRATER",10;
   - Combos:
       - Combo:
           - aegis_312400   # 312400
-          - aegis_311434   # 311434
+          - Guillcross_Middle3   # 311434
     Script: |
       bonus2 bSkillAtk,"SHC_ETERNAL_SLASH",10;
   - Combos:
       - Combo:
           - aegis_312400   # 312400
-          - aegis_311435   # 311435
+          - Guillcross_Bottom3   # 311435
     Script: |
       bonus bCRate,getskilllv("SHC_SHADOW_SENSE");
   - Combos:
@@ -40146,7 +40146,7 @@ Body:
           - XM_Celine_Kimi_Card    # 31023
     Script: |
       autobonus "{ bonus bDelayrate,50; bonus bMatkRate,25; }",20,10000,BF_MAGIC,"{ transform 2996,10000; }";
-      bonus5 bAutoSpell,"AB_VITUPERATUM",1,80,BF_MAGIC;
+      bonus5 bAutoSpell,"AB_VITUPERATUM",1,80,BF_MAGIC,0;
   - Combos:
       - Combo:
           - B_Celine_D_LT_TW    # 450272
@@ -40155,7 +40155,7 @@ Body:
       bonus bMatk,100;
       bonus3 bAutoSpell,"WL_SOULEXPANSION",5,50;
       bonus3 bAutoSpell,"AG_SOUL_VC_STRIKE",3,50;
-      bonus5 bAutoSpell,"WL_TELEKINESIS_INTENSE",3,10,BF_MAGIC;
+      bonus5 bAutoSpell,"WL_TELEKINESIS_INTENSE",3,10,BF_MAGIC,0;
   - Combos:
       - Combo:
           - B_Celine_D_LT_TW    # 450272
