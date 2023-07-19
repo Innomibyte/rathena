@@ -21479,7 +21479,7 @@ Body:
       BuyingStore: true
   - Id: 6697
     AegisName: Costume_Exchange
-    Name: Costumes Exchange Coupons
+    Name: Costumes Exchange Coupon
     Type: Etc
     Buy: 10
     Weight: 10

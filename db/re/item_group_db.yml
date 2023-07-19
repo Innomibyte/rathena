@@ -33313,7 +33313,7 @@ Body:
             Amount: 33
           - Item: Almighty
             Amount: 34
-          - Item: Limited_Power_Booster
+          - Item: Limit_Power_Booster
             Amount: 34
           - Item: Blacksmith_Blessing
             Amount: 4
@@ -33335,11 +33335,11 @@ Body:
             Amount: 33
           - Item: Almighty
             Amount: 34
-          - Item: Limited_Power_Booster
+          - Item: Limit_Power_Booster
             Amount: 34
           - Item: Small_Mana_Potion
             Amount: 50
-          - Item: Shining_Def_Scroll
+          - Item: Comp_M_DEFScroll
             Amount: 300
           - Item: Blacksmith_Blessing
             Amount: 4
@@ -33351,9 +33351,9 @@ Body:
     SubGroups:
       - SubGroup: 0
         List:
-          - Item: Premium_Flatrate_Box
+          - Item: Premium_Box_5d7
           - Item: EXP_Drop_Up_7days
-          - Item: Actinidia_Cat_Fruit
+          - Item: Nyangvine_Fruit
             Amount: 6
           - Item: K_Secret_Key
             Amount: 10

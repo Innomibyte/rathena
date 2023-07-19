@@ -79442,7 +79442,7 @@ Body:
       Rate: 200
     - Item: Old_White_Cloth
       Rate: 2000
-    - Item: Contaminated_Reagents
+    - Item: Polluted_Potion
       Rate: 1
   - Id: 3142
     AegisName: MG_ARCLOUSE_H
@@ -79484,7 +79484,7 @@ Body:
       Rate: 5000
     - Item: Great_Nature
       Rate: 200
-    - Item: Contaminated_Magic
+    - Item: Polluted_Spell
       Rate: 500
   - Id: 3143
     AegisName: MG_RAYDRIC_H
@@ -79747,7 +79747,7 @@ Body:
       StealProtected: true
   - Id: 3149
     AegisName: MG_F_UNDEAD_KNIGHT_H
-    Name: 2nd Commander of Destruction
+    Name: 2nd Commander of Destruc
     Level: 175
     Hp: 1696022
     BaseExp: 159672
@@ -79867,7 +79867,7 @@ Body:
     Race: Demon
     Element: Earth
     ElementLevel: 3
-    WalkSpeed: 2000
+    WalkSpeed: 200    #unnoficial
     AttackDelay: 576
     AttackMotion: 672
     DamageMotion: 480
@@ -105132,7 +105132,7 @@ Body:
     DamageMotion: 360
     Ai: 10
     Drops:
-    - Item: MD_Airboat_Tree_Card
+    - Item: MD_Airboat_Card
       Rate: 1
       StealProtected: true
   - Id: 20887
@@ -105165,7 +105165,7 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
-    - Item: MD_Airboat_Poring_Card
+    - Item: MD_Airboat_Card5
       Rate: 1
       StealProtected: true
   - Id: 20888
@@ -105199,7 +105199,7 @@ Body:
     DamageMotion: 540
     Ai: 21
     Drops:
-    - Item: MD_Airboat_Worm_Card
+    - Item: MD_Airboat_Card2
       Rate: 1
       StealProtected: true
   - Id: 20889
@@ -105232,7 +105232,7 @@ Body:
     DamageMotion: 336
     Ai: 21 #placeholder
     Drops:
-    - Item: MD_Airboat_Leech_Card
+    - Item: MD_Airboat_Card3
       Rate: 1
       StealProtected: true
   - Id: 20890
@@ -105265,7 +105265,7 @@ Body:
     DamageMotion: 480
     Ai: 04
     Drops:
-    - Item: MD_Airboat_Mos_Card
+    - Item: MD_Airboat_Card4
       Rate: 1
       StealProtected: true
   - Id: 20891
@@ -105300,7 +105300,7 @@ Body:
     Ai: 21
     Class: Boss
     Drops:
-    - Item: Unknown_Creature_Card
+    - Item: MD_Airboat_Card6
       Rate: 1
       StealProtected: true
 #  - Id: 20892

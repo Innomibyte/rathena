@@ -1504,7 +1504,7 @@ Body:
       - Item: Dark_Priest_Egg
       - Item: Nyang_Costume_Recipe
       - Item: Farmiliar_Egg
-  - Item: Costume_Exchange_Box
+  - Item: Costume_Exchange
     RewardGroup: COSTUME_EXCHANGE_BOX
     Requirements:
       - Item: C_Rabbit_Ear_Hat
