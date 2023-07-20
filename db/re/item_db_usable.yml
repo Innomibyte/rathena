@@ -10803,7 +10803,7 @@ Body:
       buyingstore 2;
   - Id: 12549
     AegisName: White_Slim_Pot_Box2
-    Name: White Slim Pot Box2
+    Name: Condensed White Potion 200 Box
     Type: Usable
     Trade:
       NoDrop: true
@@ -10814,7 +10814,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getitem 547,100;
+      getitem 547,200;
   - Id: 12550
     AegisName: Poison_Bottle_Box2
     Name: Deadly Poison Box

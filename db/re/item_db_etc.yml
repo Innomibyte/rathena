@@ -34757,7 +34757,7 @@ Body:
     Weight: 100
   - Id: 25140
     AegisName: Resurrection_Stone
-    Name: Resurrection Stone(Lower)
+    Name: Resurrection Stone (Lower)
     Type: Etc
     Buy: 20
     Weight: 100
@@ -70342,14 +70342,14 @@ Body:
       bonus2 bSkillAtk,"CD_ARBITRIUM_ATK",2+(getrefine()/2);
   - Id: 312218
     AegisName: CD_Soul_FL
-    Name: Cardinal Soul (Flamen)    # !todo check english name
+    Name: Cardinal Soul (Framen)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"CD_FRAMEN",2+(getrefine()/2);
   - Id: 312219
     AegisName: CD_Soul_PT
-    Name: Cardinal Soul (Petitio)    # !todo check english name
+    Name: Cardinal Soul (Petitio)
     Type: Card
     SubType: Enchant
     Script: |
