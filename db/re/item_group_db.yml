@@ -52891,7 +52891,7 @@ Body:
             Rate: 60
           - Item: C_Blue_Rose_Eyepatch
             Rate: 60
-  - Group: IG_S_DRAGOON_SHIELD_BOX
+  - Group: S_DRAGOON_SHIELD_BOX
     SubGroups:
       - SubGroup: 1
         List:
@@ -53029,7 +53029,7 @@ Body:
             Rate: 43
           - Item: C_Bless_Sky_Lantern_J
             Rate: 43
-  - Group: IG_2019_FEB_COSTUME_BOX
+  - Group: 2019_FEB_COSTUME_BOX
     SubGroups:
       - SubGroup: 1
         List:
@@ -53053,7 +53053,7 @@ Body:
             Rate: 60
           - Item: C_Under_Rim_Glasses_Bu
             Rate: 60
-  - Group: IG_2019_AUG_COSTUME_BOX
+  - Group: 2019_AUG_COSTUME_BOX
     SubGroups:
       - SubGroup: 1
         List:

@@ -7036,7 +7036,7 @@
 	export_constant(IG_2019_JULY_COSTUME_BOX);
 	export_constant(IG_2019_FEB_COSTUME_BOX);
 	export_constant(IG_2019_AUG_COSTUME_BOX);
-	export_constant(IRO_2017_APR_COSTUME);
+	export_constant(IG_IRO_2017_APR_COSTUME);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);
