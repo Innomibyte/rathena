@@ -52891,3 +52891,213 @@ Body:
             Rate: 60
           - Item: C_Blue_Rose_Eyepatch
             Rate: 60
+  - Group: IG_S_DRAGOON_SHIELD_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Cowlick_WH
+            Rate: 63
+          - Item: C_Flying_Helmet
+            Rate: 63
+          - Item: C_Sky_Helm
+            Rate: 63
+          - Item: C_Hat_Of_Bundle
+            Rate: 63
+          - Item: C_Headgear_Of_Queen
+            Rate: 63
+          - Item: C_Wing_Of_Happiness
+            Rate: 63
+          - Item: C_Hair_Bun_WH
+            Rate: 63
+          - Item: C_Rabbit_Ribbon
+            Rate: 63
+  - Group: 2019_APR_COSTUME_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Thanatos_Sword
+            Rate: 60
+          - Item: C_Ghost_Effect
+            Rate: 60
+          - Item: C_Male_Poring_Earmuff
+            Rate: 60
+          - Item: C_LunaticMuffler_TW
+            Rate: 60
+          - Item: C_Bogy_Cap_TW
+            Rate: 60
+          - Item: C_B_Desert_Wolf_Hat
+            Rate: 60
+          - Item: C_PoringBeret_TW
+            Rate: 60
+          - Item: C_Majoruros_Horn
+            Rate: 60
+          - Item: C_Adv_Whisper_Mask_J
+            Rate: 60
+          - Item: C_Miyabi_Long_Hair
+            Rate: 60
+  - Group: 2306_20THCOSTUME_US
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_King_Poring_Hat
+            Rate: 60
+          - Item: C_Asgard_Circlet_TW
+            Rate: 60
+          - Item: C_Vanargandr_Helm_GL
+            Rate: 60
+          - Item: C_Balloon_Hat_Classical
+            Rate: 60
+          - Item: C_Ignis_Cap_BU
+            Rate: 60
+          - Item: C_BirthDay_Balloon_TW
+            Rate: 60
+          - Item: C_L_Ribbon_M_WH
+            Rate: 60
+          - Item: aegis_480246
+            Rate: 60
+          - Item: C_Giant_Angeling
+            Rate: 60
+          - Item: C_Valkyrie_Hair
+            Rate: 60
+  - Group: 2019_MAY_COSTUME_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Drooping_Elven_Ears
+            Rate: 65
+          - Item: C_Heart_Wing_Hairband_V
+            Rate: 65
+          - Item: C_Kururinpa_Hair
+            Rate: 65
+          - Item: C_Fluffy_Semi_Long
+            Rate: 65
+          - Item: C_Desert_Wolf_B
+            Rate: 65
+          - Item: C_Alchemist_Square_Bag
+            Rate: 65
+          - Item: C_Poring_On_Shoulder
+            Rate: 65
+  - Group: 2019_MAR_COSTUME_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Horo_Ears
+            Rate: 63
+          - Item: C_SurviveOrb
+            Rate: 63
+          - Item: C_Magicstone_Of_Grace
+            Rate: 63
+          - Item: C_Noble_Mask
+            Rate: 63
+          - Item: C_Yellow_Wizardry_Hat
+            Rate: 63
+          - Item: C_Dark_Snake_Lord_Stall
+            Rate: 63
+          - Item: C_Large_Sorcerer_Crown
+            Rate: 63
+          - Item: C_Geisha_Make
+            Rate: 63
+  - Group: 2019_JULY_COSTUME_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Goblin_Mask_02
+            Rate: 43
+          - Item: C_Stripe_Band
+            Rate: 43
+          - Item: C_School_Bag_RD
+            Rate: 43
+          - Item: C_School_Bag_BL
+            Rate: 43
+          - Item: C_Poporing_Muffler
+            Rate: 43
+          - Item: C_Skygirl_Flower
+            Rate: 43
+          - Item: C_Gemmed_Crown
+            Rate: 43
+          - Item: C_Oxygen_Mask
+            Rate: 43
+          - Item: C_Mystery_Fruit_Shell
+            Rate: 43
+          - Item: C_Indian_Headband
+            Rate: 43
+          - Item: C_Orange_Rabbit
+            Rate: 43
+          - Item: C_Blinking_Eyes_RD
+            Rate: 43
+          - Item: C_Medium_Wave_BD
+            Rate: 43
+          - Item: C_Bless_Sky_Lantern_J
+            Rate: 43
+  - Group: IG_2019_FEB_COSTUME_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_GiantCatBag_JP
+            Rate: 60
+          - Item: C_Maple_Which_Falls_Rd
+            Rate: 60
+          - Item: C_Red_Pencil_Mouth
+            Rate: 60
+          - Item: C_Book_of_Soyga
+            Rate: 60
+          - Item: C_Spider_Temp_TW
+            Rate: 60
+          - Item: C_GoldFish_Hat
+            Rate: 60
+          - Item: C_Forest_Guide
+            Rate: 60
+          - Item: C_Medium_Wave
+            Rate: 60
+          - Item: C_Kishu_Inu
+            Rate: 60
+          - Item: C_Under_Rim_Glasses_Bu
+            Rate: 60
+  - Group: IG_2019_AUG_COSTUME_BOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Maple_Which_Falls
+            Rate: 60
+          - Item: C_Pumpkin_Head
+            Rate: 60
+          - Item: C_Puppy_Hat2
+            Rate: 60
+          - Item: C_Maple_Which_Falls_Rd
+            Rate: 60
+          - Item: C_Dwarf_Beard
+            Rate: 60
+          - Item: C_Squirrel_Ear_Hat
+            Rate: 60
+          - Item: C_Wonderful_Beast_Ear
+            Rate: 60
+          - Item: C_Gemini_RedEyes
+            Rate: 60
+          - Item: C_Eremes_Scarf_BU
+            Rate: 60
+          - Item: C_Book_of_Soyga
+            Rate: 60
+  - Group: IRO_2017_APR_COSTUME
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_White_Black_Temp
+            Rate: 60
+          - Item: C_Quati_Hat_J
+            Rate: 60
+          - Item: C_Black_Shiba_Inu_Hat
+            Rate: 60
+          - Item: C_Umbala_Spirit
+            Rate: 60
+          - Item: C_Elephant_Hat
+            Rate: 60
+          - Item: C_Cat_Ear_Hat
+            Rate: 60
+          - Item: C_Pretty_Bear
+            Rate: 60
+          - Item: C_Black_Cat_Hood
+            Rate: 60
+          - Item: C_Pig_Nose
+            Rate: 60
+          - Item: C_Tiger_Face
+            Rate: 60

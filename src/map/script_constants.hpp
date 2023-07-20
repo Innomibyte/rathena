@@ -7028,6 +7028,15 @@
 	export_constant(IG_QUESTION_BOX);
 	export_constant(IG_GOLDEN_CARD);
 	export_constant(IG_IRO_JUN_COSTUME_BOX);
+	export_constant(IG_S_DRAGOON_SHIELD_BOX);
+	export_constant(IG_2019_APR_COSTUME_BOX);
+	export_constant(IG_2306_20THCOSTUME_US);
+	export_constant(IG_2019_MAY_COSTUME_BOX);
+	export_constant(IG_2019_MAR_COSTUME_BOX);
+	export_constant(IG_2019_JULY_COSTUME_BOX);
+	export_constant(IG_2019_FEB_COSTUME_BOX);
+	export_constant(IG_2019_AUG_COSTUME_BOX);
+	export_constant(IRO_2017_APR_COSTUME);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);
