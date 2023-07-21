@@ -57714,6 +57714,19 @@ Body:
     Weight: 10
     Script: |
       laphine_upgrade();
+  - Id: 23723
+    AegisName: Melon_Bread
+    Name: Melon Bread
+    Type: Healing
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoAuction: true
+    Script: |
+      percentheal 30,0;
   - Id: 23724
     AegisName: Celebrate_Egg
     Name: Memorial Egg

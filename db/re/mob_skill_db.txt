@@ -12886,6 +12886,11 @@
 3757,Dracula of Rage@NPC_GRANDDARKNESS,attack,339,10,900,1000,1200,no,self,always,0,,,,,,,
 3757,Dracula of Rage@NPC_DARKTHUNDER,attack,341,10,900,1000,1200,no,target,always,0,,,,,,,
 
+// 2016 Christmas mobs
+3734,Happy Santa Orc@NPC_TALK,attack,682,1,2000,0,5000,yes,self,always,0,,,,,,,49
+3734,Happy Santa Orc@NPC_TALK,attack,682,1,2000,0,5000,yes,self,always,0,,,,,,,50
+3735,Santa Poring@NPC_EMOTION,loot,197,1,2000,0,5000,yes,self,always,0,2,,,,,,
+
 // Illusion of Moonlight
 3758,Angry Moonlight Flower@AL_HEAL,attack,28,11,10000,0,5000,no,friend,friendhpltmaxrate,60,,,,,,21,
 3758,Angry Moonlight Flower@AL_HEAL,attack,28,11,10000,0,5000,no,self,myhpltmaxrate,30,,,,,,21,
