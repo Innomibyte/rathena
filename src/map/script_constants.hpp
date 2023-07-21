@@ -7037,6 +7037,9 @@
 	export_constant(IG_2019_FEB_COSTUME_BOX);
 	export_constant(IG_2019_AUG_COSTUME_BOX);
 	export_constant(IG_IRO_2017_APR_COSTUME);
+	export_constant(IG_218_ANIMALS_US);
+	export_constant(IG_2208_CHILLY_US);
+	export_constant(IG_2305_CAMPINGCOSTUME_US);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);

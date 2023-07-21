@@ -53101,3 +53101,75 @@ Body:
             Rate: 60
           - Item: C_Tiger_Face
             Rate: 60
+  - Group: 218_ANIMALS_US
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Happy_Cat_JP
+            Rate: 60
+          - Item: C_Nut_Cracker_JP
+            Rate: 60
+          - Item: C_Diabolus_Wing
+            Rate: 60
+          - Item: C_Frog_Hood
+            Rate: 60
+          - Item: C_Super_Cell
+            Rate: 60
+          - Item: C_Unicorn_Ornament
+            Rate: 60
+          - Item: C_Baby_Dragon_Hat
+            Rate: 60
+          - Item: C_Angel_Of_Happiness
+            Rate: 60
+          - Item: C_Leaf_Umbrella
+            Rate: 60
+          - Item: C_BlackCatBag_TW
+            Rate: 60
+  - Group: 2208_CHILLY_US
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Ru_Bear_Bag
+            Rate: 60
+          - Item: C_Shaving_Cream
+            Rate: 60
+          - Item: C_Fantastic_Wig
+            Rate: 60
+          - Item: C_Navy_Beret
+            Rate: 60
+          - Item: C_Fluffy_Rabbit_Cape
+            Rate: 60
+          - Item: C_Released_Ground
+            Rate: 60
+          - Item: C_Bear_Head_J
+            Rate: 60
+          - Item: C_Charm_Of_Mistic_Froze
+            Rate: 60
+          - Item: C_SR_Hair_SV
+            Rate: 60
+          - Item: C_Lunatic_Bag
+            Rate: 60
+  - Group: 2305_CAMPINGCOSTUME_US
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Soldier_Backpack
+            Rate: 60
+          - Item: C_Harvest_Festa_Hat
+            Rate: 60
+          - Item: C_ScarfOfHero_TW
+            Rate: 60
+          - Item: C_Wondering_Wolf_V
+            Rate: 60
+          - Item: C_Bull_Hat
+            Rate: 60
+          - Item: C_RA_Hair_PK
+            Rate: 60
+          - Item: C_B_Shiba_Inu_TW
+            Rate: 60
+          - Item: C_Traveller_Oil_Lantern
+            Rate: 60
+          - Item: C_Tent
+            Rate: 60
+          - Item: aegis_480207 #Costume Traveler Bag
+            Rate: 60
