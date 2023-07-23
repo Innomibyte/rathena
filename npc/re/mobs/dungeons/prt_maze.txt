@@ -101,3 +101,36 @@ prt_maze03,99,21,10,10	monster	Black Mushroom	1084,3,180000,90000
 prt_maze03,54,15,10,10	monster	Black Mushroom	1084,3,180000,90000
 prt_maze03,171,180,3,3	monster	Red Mushroom	1085,2,180000,90000
 prt_maze03,174,187,3,3	monster	Red Mushroom	1085,3,180000,90000
+
+//==================================================
+// prt_mz03_i - Illusion of Labyrinth
+//==================================================
+prt_mz03_i,0,0	monster	Chaotic Baphomet Jr	20525,15,50000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Side Winder	20526,12,150000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Hunter Fly	20527,12,150000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Mantis	20528,12,150000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Ghostring	20529,5,50000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Killer Mantis	20530,12,150000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Poporing	20531,12,150000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Stem Worm	20532,12,150000,0,"prt_mz03_i_boss::OnMobDead"
+
+//Boss Spawner
+-	script	prt_mz03_i_boss	-1,{
+	end;
+OnMobDead:
+	if (.count>=1200 && !.boss_spawn) {
+		killmonster "prt_mz03_i", "prt_mz03_i_boss::OnBossDeath";
+		mapannounce "prt_mz03_i", "Chaotic Baphomet has appeared!", bc_map, "0x70dbdb";
+		getunitdata( killedgid, .@data );
+		monster "prt_mz03_i", .@data[UMOB_X], .@data[UMOB_Y], "--ja--", 20520,1, "prt_mz03_i_boss::OnBossDeath";
+		.boss_spawn = true;
+		.count = 0;
+		end;
+	} else {
+		.count++;
+	}
+OnBossDeath:
+	killmonster "ant_d02_i", "prt_mz03_i_boss::OnBossDeath";
+	.boss_spawn = false;
+	end;
+}
