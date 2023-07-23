@@ -105829,10 +105829,83 @@ Body:
     - Item: Crow_Baron_Card
       Rate: 1
       StealProtected: true
-#  - Id: 20784
-#    AegisName: MD_THANATOS
-#  - Id: 20785
-#    AegisName: MD_BROKEN_THANATOS
+  - Id: 20784
+    AegisName: MD_THANATOS
+    Name: Thanatos
+    Level: 210
+    Hp: 442473071
+    BaseExp: 0
+    JobExp: 0
+    Attack: 7350
+    Attack2: 2604
+    Defense: 390
+    MagicDefense: 86
+    Str: 280
+    Agi: 108
+    Vit: 60
+    Int: 186
+    Dex: 196
+    Luk: 61
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demon
+    Element: Holy
+    ElementLevel: 2
+    WalkSpeed: 120
+    AttackDelay: 147
+    AttackMotion: 1632
+    DamageMotion: 672
+    Ai: 21
+    Class: Boss
+    Modes:
+      Mvp: true
+    Drops:
+    - Item: Sin_Fragment
+      Rate: 2000
+    - Item: Fate_Fragment
+      Rate: 2000
+  - Id: 20785
+    AegisName: MD_BROKEN_THANATOS
+    Name: Broken Memory of Thanatos
+    Level: 210
+    Hp: 441773071
+    BaseExp: 0
+    JobExp: 0
+    Attack: 6038
+    Attack2: 1582
+    Defense: 270
+    MagicDefense: 79
+    Str: 230
+    Agi: 168
+    Vit: 20
+    Int: 113
+    Dex: 167
+    Luk: 47
+    AttackRange: 3
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 120
+    AttackDelay: 115
+    AttackMotion: 1632
+    DamageMotion: 672
+    Ai: 21
+    Class: Boss
+    Modes:
+      Mvp: true
+    Drops:
+    - Item: Sin_Fragment
+      Rate: 2000
+    - Item: Fate_Fragment
+      Rate: 2000
+    - Item: Broken_Thanatos_Card
+      Rate: 1
+      StealProtected: true
 #  - Id: 20786
 #    AegisName: MD_THA_BUFF
 #  - Id: 20787
