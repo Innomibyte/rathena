@@ -98975,14 +98975,192 @@ Body:
 #    AegisName: E_WICKED_NYMPH_BOSS
 #  - Id: 20385
 #    AegisName: MD_GH_KING_SCHMIDT
-#  - Id: 20386
-#    AegisName: MD_GH_KING_SCHMIDT_N
-#  - Id: 20387
-#    AegisName: MD_GH_KING_SCHMIDT_H
-#  - Id: 20388
-#    AegisName: MD_GH_KHALITZBURG
-#  - Id: 20389
-#    AegisName: MD_GH_KHALITZBURG_H
+  - Id: 20386
+    AegisName: MD_GH_KING_SCHMIDT_N
+    Name: Curse-swallowed King
+    Level: 110
+    Hp: 9200000
+    BaseExp: 1100000
+    JobExp: 820000
+    Attack: 5100
+    Attack2: 3100
+    Defense: 340
+    MagicDefense: 82
+    Str: 180
+    Agi: 200
+    Vit: 77
+    Int: 200
+    Dex: 282
+    Luk: 154
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 4
+    WalkSpeed: 170
+    AttackDelay: 76
+    AttackMotion: 384
+    DamageMotion: 288
+    Ai: 21
+    Class: Boss
+    Modes:
+      Mvp: true
+    Drops:
+    - Item: Yggdrasilberry
+      Rate: 8000
+    - Item: Old_Violet_Box
+      Rate: 10000
+    - Item: Old_Card_Album
+      Rate: 3000
+    - Item: Magic_Card_Album
+      Rate: 500
+    - Item: Temporal_Crystal
+      Rate: 4000
+    - Item: GH_Cursed_Crystal
+      Rate: 5000
+    - Item: GH_Cursed_Crystal
+      Rate: 1500
+    - Item: Schmidt_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20387
+    AegisName: MD_GH_KING_SCHMIDT_H
+    Name: Curse-swallowed King
+    Level: 175
+    Hp: 45000000
+    BaseExp: 3900000
+    JobExp: 2300000
+    Attack: 9564
+    Attack2: 4235
+    Defense: 680
+    MagicDefense: 90
+    Str: 360
+    Agi: 400
+    Vit: 90
+    Int: 400
+    Dex: 574
+    Luk: 154
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demihuman
+    Element: Neutral
+    ElementLevel: 4
+    WalkSpeed: 170
+    AttackDelay: 76
+    AttackMotion: 384
+    DamageMotion: 288
+    Ai: 21
+    Class: Boss
+    Modes:
+      Mvp: true
+    Drops:
+    - Item: Yggdrasilberry
+      Rate: 8000
+    - Item: Old_Violet_Box
+      Rate: 10000
+    - Item: Old_Card_Album
+      Rate: 6000
+    - Item: Magic_Card_Album
+      Rate: 1000
+    - Item: Temporal_Crystal
+      Rate: 4000
+    - Item: GH_Cursed_Gemstone
+      Rate: 5000
+    - Item: GH_Cursed_Gemstone
+      Rate: 1500
+    - Item: Schmidt_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20388
+    AegisName: MD_GH_KHALITZBURG
+    Name: Unreasonable Person
+    Level: 110
+    Hp: 46350
+    BaseExp: 2600
+    JobExp: 2500
+    Attack: 1800
+    Attack2: 300
+    Defense: 204
+    MagicDefense: 50
+    Str: 120
+    Agi: 110
+    Vit: 68
+    Int: 80
+    Dex: 130
+    Luk: 45
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 3
+    WalkSpeed: 200
+    AttackDelay: 478
+    AttackMotion: 1000
+    DamageMotion: 396
+    Ai: 04
+    Drops:
+    - Item: Brigan
+      Rate: 5000
+    - Item: Dark_Crystal_Fragment
+      Rate: 2000
+    - Item: Elunium
+      Rate: 100
+    - Item: Patriotism_Marks
+      Rate: 10
+    - Item: GH_Cursed_Crystal
+      Rate: 50
+    - Item: Khaliz_Knightage_Card
+      Rate: 1
+      StealProtected: true
+  - Id: 20389
+    AegisName: MD_GH_KHALITZBURG_H
+    Name: Khalitzburg Knight
+    Level: 175
+    Hp: 1140000
+    BaseExp: 30000
+    JobExp: 28000
+    Attack: 4130
+    Attack2: 544
+    Defense: 408
+    MagicDefense: 80
+    Str: 240
+    Agi: 220
+    Vit: 80
+    Int: 160
+    Dex: 260
+    Luk: 90
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Demihuman
+    Element: Fire
+    ElementLevel: 3
+    WalkSpeed: 200
+    AttackDelay: 478
+    AttackMotion: 1000
+    DamageMotion: 396
+    Ai: 04
+    Drops:
+    - Item: Brigan
+      Rate: 5000
+    - Item: Dark_Crystal_Fragment
+      Rate: 2000
+    - Item: Elunium
+      Rate: 100
+    - Item: Patriotism_Marks
+      Rate: 10
+    - Item: GH_Cursed_Crystal
+      Rate: 50
+    - Item: Khaliz_Knightage_Card
+      Rate: 1
+      StealProtected: true
   - Id: 20390
     AegisName: MD_GH_WHITEKNIGHT
     Name: White Knight
@@ -99071,12 +99249,76 @@ Body:
     - Item: White_Knightage_Card
       Rate: 1
       StealProtected: true
-#  - Id: 20392
-#    AegisName: MD_GH_ALICE_G
+  - Id: 20392
+    AegisName: MD_GH_ALICE_G
+    Name: Fallen Maid
+    Level: 110
+    Hp: 68145
+    BaseExp: 50
+    JobExp: 50
+    Attack: 800
+    Attack2: 1500
+    Defense: 103
+    MagicDefense: 70
+    Str: 95
+    Agi: 75
+    Vit: 70
+    Int: 100
+    Dex: 152
+    Luk: 80
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 200
+    AttackDelay: 502
+    AttackMotion: 1999
+    DamageMotion: 480
+    Ai: 04
 #  - Id: 20393
 #    AegisName: MD_GH_ROOT_G
-#  - Id: 20394
-#    AegisName: MD_GH_BLOODY_KNIGHT
+  - Id: 20394
+    AegisName: MD_GH_BLOODY_KNIGHT
+    Name: Dark Knight
+    Level: 175
+    Hp: 1152000
+    BaseExp: 21000
+    JobExp: 22000
+    Attack: 2625
+    Attack2: 690
+    Defense: 266
+    MagicDefense: 300
+    Str: 264
+    Agi: 255
+    Vit: 90
+    Int: 302
+    Dex: 274
+    Luk: 95
+    AttackRange: 2
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Undead
+    Element: Dark
+    ElementLevel: 4
+    WalkSpeed: 200
+    AttackDelay: 414
+    AttackMotion: 364
+    DamageMotion: 192
+    Ai: 04
+    Class: Boss
+    Drops:
+    - Item: Brigan
+      Rate: 5000
+    - Item: Broad_Sword
+      Rate: 10
+    - Item: Two_Hand_Sword
+      Rate: 10
+    - Item: GH_Cursed_Crystal
+      Rate: 50
 #  - Id: 20395
 #    AegisName: HIDDEN_HOMUN
 #  - Id: 20396
@@ -108583,8 +108825,38 @@ Body:
 #    AegisName: MD_G_DEADSOUL
 #  - Id: 20996
 #    AegisName: MD_NAGHT_SIEGER
-#  - Id: 20997
-#    AegisName: MD_G_ENTWEIHEN_M
+  - Id: 20997
+    AegisName: MD_G_ENTWEIHEN_M
+    Name: Thorn of Magic
+    Level: 250
+    Hp: 5000000
+    BaseExp: 0
+    JobExp: 0
+    Attack: 7400
+    Attack2: 5900
+    Defense: 71
+    MagicDefense: 66
+    Str: 102
+    Agi: 190
+    Vit: 30
+    Int: 288
+    Dex: 245
+    Luk: 10
+    AttackRange: 12
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Medium
+    Race: Demon
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 0
+    AttackDelay: 1024
+    AttackMotion: 288
+    DamageMotion: 576
+    Ai: 27
+    Class: Boss
+    Modes:
+      KnockBackImmune: true
 #  - Id: 20998
 #    AegisName: MD_T_JAKK
 #  - Id: 20999
