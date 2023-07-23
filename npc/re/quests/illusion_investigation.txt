@@ -918,7 +918,6 @@ OnInit:
 	end;
 }
 
-/*
 ant_d02_i,167,184,5	script	Sheshin#sesin	1_M_MOC_LORD,{
 	if (BaseLevel < 160)
 		end;
@@ -1082,7 +1081,6 @@ OnInit:
 	questinfo( QTYPE_DAILYQUEST, QMARK_YELLOW, "checkquest(3509,PLAYTIME) == 2" );
 	end;
 }
-*/
 
 com_d02_i,253,232,3	script	Cassis#kesis	4_M_KHBOY,{
 	if (BaseLevel < 160)
@@ -1230,7 +1228,6 @@ OnInit:
 	end;
 }
 
-/*
 prt_fild01,131,364,5	script	Terrian#terian	4W_M_02,{
 	if (BaseLevel < 170) {
 		mes "[Terrian]";
@@ -1396,7 +1393,6 @@ OnInit:
 	questinfo( QTYPE_DAILYQUEST, QMARK_YELLOW, "checkquest(3466,PLAYTIME) == 2" );
 	end;
 }
-*/
 
 iz_d04_i,127,224,5	script	Lister#ristar	4_F_01,{
 	if (BaseLevel < 180) {
