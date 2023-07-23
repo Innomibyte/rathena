@@ -1459,21 +1459,21 @@ Body:
     TimeLimit: 4h
   - Id: 3464
     Title: Illusion Investigation Team - Terrian
-  # - Id: 3465
-    # Title: Illusion of Labyrinth 100 Kills
-    # Targets:
-      # - Id: 1
-        # Count: 100
-        # Location: prt_mz03_i
-        # MapMobTargets:
-          # ILL_STEM_WORM: true
-          # ILL_GHOSTRING: true
-          # ILL_POPORING: true
-          # ILL_MANTIS: true
-          # ILL_HUNTER_FLY: true
-          # ILL_SIDE_WINDER: true
-          # ILL_BAPHOMET_J: true
-          # ILL_KILLER_MANTIS: true
+  - Id: 3465
+    Title: Illusion of Labyrinth 100 Kills
+    Targets:
+      - Id: 1
+        Count: 100
+        Location: prt_mz03_i
+        MapMobTargets:
+          ILL_STEM_WORM: true
+          ILL_GHOSTRING: true
+          ILL_POPORING: true
+          ILL_MANTIS: true
+          ILL_HUNTER_FLY: true
+          ILL_SIDE_WINDER: true
+          ILL_BAPHOMET_J: true
+          ILL_KILLER_MANTIS: true
   - Id: 3466
     Title: Illusion of Labyrinth 100 Kills - Standby
     TimeLimit: 4h
