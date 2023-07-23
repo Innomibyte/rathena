@@ -130,7 +130,7 @@ OnMobDead:
 		.count++;
 	}
 OnBossDeath:
-	killmonster "ant_d02_i", "prt_mz03_i_boss::OnBossDeath";
+	killmonster "prt_mz03_i", "prt_mz03_i_boss::OnBossDeath";
 	.boss_spawn = false;
 	end;
 }

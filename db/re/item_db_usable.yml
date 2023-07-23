@@ -4218,6 +4218,13 @@ Body:
     Weight: 50
     Script: |
       itemheal rand(100,150),0;
+  - Id: 11620
+    AegisName: Bearopy
+    Name: Gummy Bear    #not the official name
+    Type: Healing
+    Weight: 10
+    Script: |
+      /*No idea what this item does*/
   - Id: 11621
     AegisName: High_RedPotion
     Name: Red Syrup
