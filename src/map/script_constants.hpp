@@ -7046,6 +7046,13 @@
 	export_constant(IG_AEGIS_101924);
 	export_constant(IG_AEGIS_101925);
 	export_constant(IG_COSTAMA_EGG69);
+	export_constant(IG_ROYAL_CARD_ALBUM_EXE);
+	export_constant(IG_ARIBUTA_SCROLL);
+	export_constant(IG_ARDOR_SCROLL);
+	export_constant(IG_ARDOR_SCROLL_TW);
+	export_constant(IG_AQUARIUS_SCROLL);
+	export_constant(IG_TW_13Y_LUCKY_EGG_01);
+	export_constant(IG_TW_13Y_LUCKY_EGG_02);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);

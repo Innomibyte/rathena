@@ -2939,6 +2939,15 @@ Body:
       NoAuction: true
     Script: |
       getgroupitem(IG_Boarding_Halter_Box);
+  - Id: 9994
+    AegisName: Royal_Card_Album_EXE
+    Name: Royal Card Album
+    Type: Usable
+    Weight: 10
+    Flags:
+      Container: true
+    Script: |
+      getitem groupranditem(IG_ROYAL_CARD_ALBUM_EXE),1;;
   - Id: 9897
     AegisName: E_Glittering_Doll_B
     Name: Shiny Doll Button
@@ -30499,6 +30508,8 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+    Script: |
+      getitem groupranditem(IG_ARDOR_SCROLL),1;
   - Id: 14314
     AegisName: PhreeoniS_Box
     Name: Phreeoni Scroll Box
@@ -34433,6 +34444,16 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 14678
+    AegisName: Ardor_Scroll_TW
+    Name: Ardor Scroll
+    Type: Cash
+    Weight: 10
+    Trade:
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem groupranditem(IG_ARDOR_SCROLL_TW),1;
   - Id: 14679
     AegisName: Sealed_Knight_WS_Scroll
     Name: Article Sealed Storm Scroll
@@ -34471,6 +34492,24 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 14687
+    AegisName: TW_13y_Lucky_Egg_01
+    Name: 2013 Lucky Scroll 1
+    Type: Cash
+    Trade:
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem groupranditem(IG_TW_13Y_LUCKY_EGG_01),1;
+  - Id: 14688
+    AegisName: TW_13y_Lucky_Egg_02
+    Name: 2013 Lucky Scroll 2
+    Type: Cash
+    Trade:
+      NoDrop: true
+      NoSell: true
+    Script: |
+      getitem groupranditem(IG_TW_13Y_LUCKY_EGG_02),1;
   - Id: 14689
     AegisName: Sealed_Kiel_Scroll
     Name: Sealed Kiel-D-01 Scroll
@@ -39967,6 +40006,8 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
+    Script: |
+      getitem groupranditem(IG_ARIBUTA_SCROLL),1;
   - Id: 16633
     AegisName: Bubble_Gum_Plus_10Box
     Name: Bubble Gum Plus Box
@@ -44437,6 +44478,8 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
+    Script: |
+      getitem groupranditem(IG_AQUARIUS_SCROLL),1;
   - Id: 17113
     AegisName: Pisces_Scroll
     Name: Pisces Scroll
@@ -44483,6 +44526,8 @@ Body:
     Weight: 10
     Flags:
       UniqueId: true
+    Script: |
+      getitem groupranditem(IG_ARIES_SCROLL),1;
   - Id: 17118
     AegisName: ASPD_Potion_Box10
     Name: ASPD Enhanced Potion Box
