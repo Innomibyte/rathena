@@ -7045,6 +7045,7 @@
 	export_constant(IG_AEGIS_101923);
 	export_constant(IG_AEGIS_101924);
 	export_constant(IG_AEGIS_101925);
+	export_constant(IG_COSTAMA_EGG69);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);

@@ -2039,6 +2039,7 @@ enum e_random_item_group {
 	IG_AEGIS_101923,
 	IG_AEGIS_101924,
 	IG_AEGIS_101925,
+	IG_COSTAMA_EGG69,
 
 	IG_MAX,
 };

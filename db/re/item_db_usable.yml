@@ -49694,6 +49694,13 @@ Body:
       NoAuction: true
     Script: |
       getgroupitem(IG_3_LIFE_POTION_10PACK12);
+  - Id: 17966
+    AegisName: Costama_Egg69
+    Name: Cyber Costume Egg II
+    Type: Cash
+    Weight: 10
+    Script: |
+      getitem groupranditem(IG_COSTAMA_EGG69),1;
   - Id: 17967
     AegisName: Infinity_Box2
     Name: Infinity Box II

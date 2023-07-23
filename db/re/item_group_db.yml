@@ -44865,17 +44865,17 @@ Body:
             Rate: 100
           - Item: aegis_101925
             Rate: 100
-          - Item: aegis_600041
+          - Item: Execution_Great_Sword
             Rate: 100
-          - Item: aegis_500072
+          - Item: Devil_Guardian_Sword
             Rate: 100
-          - Item: aegis_550115
+          - Item: Darkness_Foxtail_Model
             Rate: 100
-          - Item: aegis_630027
+          - Item: Luppiter_Spear
             Rate: 100
-          - Item: aegis_530045
+          - Item: Holy_Raise_Spear
             Rate: 100
-          - Item: aegis_550116
+          - Item: Lightforce_Foxtail_Wand
             Rate: 100
           - Item: Blacksmith_Bless_Box_3
             Rate: 300
@@ -53124,4 +53124,28 @@ Body:
           - Item: C_Tent
             Rate: 60
           - Item: aegis_480207 #Costume Traveler Bag
+            Rate: 60
+  - Group: COSTAMA_EGG69
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: C_Guardian_Processor
+            Rate: 60
+          - Item: C_Digital_Space
+            Rate: 60
+          - Item: C_Mobile_Pursuit_System
+            Rate: 60
+          - Item: C_Electro_Two_Side_Up
+            Rate: 60
+          - Item: C_Mecha_Cat_Ears
+            Rate: 60
+          - Item: C_Cyber_Income
+            Rate: 60
+          - Item: C_CatEars_Cyber_HeadP
+            Rate: 60
+          - Item: C_OpenAir_Headset
+            Rate: 60
+          - Item: C_Flying_Drone
+            Rate: 60
+          - Item: C_Cyclops_Visor
             Rate: 60

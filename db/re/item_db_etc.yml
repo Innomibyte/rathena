@@ -559,7 +559,7 @@ Body:
     AegisName: Oridecon_Stone
     Name: Rough Oridecon
     Type: Etc
-    Buy: 550
+    Buy: 412
     Weight: 200
     Flags:
       BuyingStore: true
@@ -677,7 +677,7 @@ Body:
     AegisName: Zargon
     Name: Zargon
     Type: Etc
-    Buy: 480
+    Buy: 360
     Weight: 10
     Flags:
       BuyingStore: true
@@ -789,7 +789,7 @@ Body:
     AegisName: Scale_Of_Snakes
     Name: Snake Scale
     Type: Etc
-    Buy: 82
+    Buy: 60
     Weight: 10
     Flags:
       BuyingStore: true
@@ -861,7 +861,7 @@ Body:
     AegisName: Posionous_Canine
     Name: Venom Canine
     Type: Etc
-    Buy: 148
+    Buy: 110
     Weight: 10
     Flags:
       BuyingStore: true
@@ -869,7 +869,7 @@ Body:
     AegisName: Sticky_Mucus
     Name: Sticky Mucus
     Type: Etc
-    Buy: 70
+    Buy: 52
     Weight: 10
     Flags:
       BuyingStore: true
@@ -909,7 +909,7 @@ Body:
     AegisName: Solid_Shell
     Name: Solid Shell
     Type: Etc
-    Buy: 448
+    Buy: 336
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1141,7 +1141,7 @@ Body:
     AegisName: Karvodailnirol
     Name: Karvodailnirol
     Type: Etc
-    Buy: 400
+    Buy: 300
     Weight: 30
     Flags:
       BuyingStore: true
@@ -1229,7 +1229,7 @@ Body:
     AegisName: Oridecon
     Name: Oridecon
     Type: Etc
-    Buy: 1100
+    Buy: 824
     Weight: 200
     Flags:
       BuyingStore: true
@@ -1238,7 +1238,7 @@ Body:
     AegisName: Elunium
     Name: Elunium
     Type: Etc
-    Buy: 1100
+    Buy: 824
     Weight: 200
     Flags:
       BuyingStore: true
@@ -1303,7 +1303,7 @@ Body:
     AegisName: Yellow_Live
     Name: Green Live
     Type: Etc
-    Buy: 1000
+    Buy: 750
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1327,7 +1327,7 @@ Body:
     AegisName: Rough_Wind
     Name: Rough Wind
     Type: Etc
-    Buy: 3000
+    Buy: 2250
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1335,7 +1335,7 @@ Body:
     AegisName: Great_Nature
     Name: Great Nature
     Type: Etc
-    Buy: 3000
+    Buy: 2250
     Weight: 300
     Flags:
       BuyingStore: true
@@ -1351,7 +1351,7 @@ Body:
     AegisName: Steel
     Name: Steel
     Type: Etc
-    Buy: 1000
+    Buy: 750
     Weight: 100
     Flags:
       BuyingStore: true
@@ -1607,7 +1607,7 @@ Body:
     AegisName: Limb_Of_Mantis
     Name: Mantis Scythe
     Type: Etc
-    Buy: 196
+    Buy: 146
     Weight: 10
     Flags:
       BuyingStore: true
@@ -1831,7 +1831,7 @@ Body:
     AegisName: Transparent_Cloth
     Name: Fabric
     Type: Etc
-    Buy: 306
+    Buy: 228
     Weight: 10
     Flags:
       BuyingStore: true
@@ -24157,7 +24157,7 @@ Body:
     AegisName: Tough_Scalelike_Stem
     Name: Tough Scalelike Stem
     Type: Etc
-    Buy: 412
+    Buy: 308
     Weight: 10
     Flags:
       BuyingStore: true
@@ -24463,7 +24463,7 @@ Body:
     AegisName: Brigan
     Name: Brigan
     Type: Etc
-    Buy: 746
+    Buy: 558
     Weight: 10
     Flags:
       BuyingStore: true
@@ -25356,7 +25356,7 @@ Body:
     AegisName: Soft_Silk_Cloth
     Name: Soft Silk
     Type: Etc
-    Buy: 1200
+    Buy: 900
     Weight: 10
     Flags:
       BuyingStore: true
@@ -26491,7 +26491,7 @@ Body:
     AegisName: Fragment_Of_Crystal
     Name: Crystal Fragment
     Type: Etc
-    Buy: 552
+    Buy: 414
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37620,6 +37620,7 @@ Body:
     AegisName: Delicious_Juice
     Name: Delicious Juice
     Type: Etc
+    Sell: 525
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37627,6 +37628,7 @@ Body:
     AegisName: Snake_Deadly_Poison
     Name: Snake's Venom
     Type: Etc
+    Sell: 560
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37634,6 +37636,7 @@ Body:
     AegisName: Mantis_Flower
     Name: Mantis Flower
     Type: Etc
+    Sell: 520
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37641,6 +37644,7 @@ Body:
     AegisName: Soft_Scarf
     Name: Fluffy Cloth Piece
     Type: Etc
+    Sell: 625
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37648,6 +37652,7 @@ Body:
     AegisName: Purple_Solid_Shell
     Name: Very Solid Purple Shell
     Type: Etc
+    Sell: 670
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37655,6 +37660,7 @@ Body:
     AegisName: Suspicious_Sap
     Name: Mysterious Sap
     Type: Etc
+    Sell: 580
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37662,6 +37668,7 @@ Body:
     AegisName: Brilliant_Jelly
     Name: Autumn Light Jelly Piece
     Type: Etc
+    Sell: 570
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37669,6 +37676,7 @@ Body:
     AegisName: Short_Rope
     Name: Short Binding Rope
     Type: Etc
+    Sell: 680
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37676,6 +37684,7 @@ Body:
     AegisName: Essence_Of_Demon
     Name: Demonic Essece
     Type: Etc
+    Sell: 1250
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37683,6 +37692,7 @@ Body:
     AegisName: Little_Lovely_Candle
     Name: Pretty Little Candle
     Type: Etc
+    Sell: 500
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37690,6 +37700,7 @@ Body:
     AegisName: Medicinal_Stuff
     Name: Medicinal Bag
     Type: Etc
+    Sell: 500
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37697,6 +37708,7 @@ Body:
     AegisName: Cold_Holy_Water
     Name: Cold Holy Water
     Type: Etc
+    Sell: 500
     Weight: 10
     Flags:
       BuyingStore: true
@@ -37704,6 +37716,7 @@ Body:
     AegisName: Small_Flashlight
     Name: Small Flashlight
     Type: Etc
+    Sell: 500
     Weight: 10
     Flags:
       BuyingStore: true
