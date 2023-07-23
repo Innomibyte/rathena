@@ -3325,7 +3325,7 @@ Body:
       Night_Watch: true
       Hyper_Novice: true
       Spirit_Handler: true
-    MaxBaseLevel: 250
+    MaxBaseLevel: 260
     BaseExp:
       - Level: 1
         Exp: 600
@@ -3826,7 +3826,27 @@ Body:
       - Level: 249
         Exp: 269437087791
       - Level: 250
-        Exp: 999999999999
+        Exp: 328713247105
+      - Level: 251
+        Exp: 401030161468
+      - Level: 252
+        Exp: 489256796991
+      - Level: 253
+        Exp: 596893292329
+      - Level: 254
+        Exp: 728209816641
+      - Level: 255
+        Exp: 888415976302
+      - Level: 256
+        Exp: 1083867491089
+      - Level: 257
+        Exp: 1322318339129
+      - Level: 258
+        Exp: 1613228373737
+      - Level: 259
+        Exp: 1968138615959
+      - Level: 260
+        Exp: 9999999999999
   - Jobs:
       Dragon_Knight: true
       Meister: true
@@ -3852,7 +3872,7 @@ Body:
       Night_Watch: true
       Hyper_Novice: true
       Spirit_Handler: true
-    MaxJobLevel: 50
+    MaxJobLevel: 55
     JobExp:
       - Level: 1
         Exp: 4700000
@@ -3953,4 +3973,14 @@ Body:
       - Level: 49
         Exp: 4073145058
       - Level: 50
+        Exp: 4602653916
+      - Level: 51
+        Exp: 5200998925
+      - Level: 52
+        Exp: 5877128785
+      - Level: 53
+        Exp: 6641155527
+      - Level: 54
+        Exp: 7504505746
+      - Level: 55
         Exp: 9999999999
