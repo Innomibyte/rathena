@@ -1,0 +1,13 @@
+//===== rAthena Script =======================================
+//= Rachel Field Warp Script
+//===== Current Version: =====================================
+//= 1.0
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Warp Points for Oz Labyrinth Dungeon
+//============================================================
+
+oz_dun01,113,34,0	warp	oz000	1,1,oz_dun02,142,276
+//TODO -> warp to ra_fild10
+oz_dun02,142,280,0	warp	oz001	1,1,oz_dun01,114,36

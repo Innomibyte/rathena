@@ -1,0 +1,23 @@
+//===== rAthena Script =======================================
+//= Oz Labyrinth Dungeon Monster Spawn Script
+//===== Current Version: =====================================
+//= 1.0
+//===== Compatible With: =====================================
+//= rAthena Project
+//============================================================
+
+//==================================================
+// oz_dun01 - Oz Labyrinth 1st Floor
+//==================================================
+oz_dun01,0,0	monster	Rakehand	21296,70,5000
+oz_dun01,0,0	monster	Ash Toad	21295,65,5000
+oz_dun01,0,0	monster	Spark	21297,10,5000
+
+//==================================================
+// oz_dun02 - Oz Labyrinth 2nd Floor
+//==================================================
+oz_dun02,0,0	monster	Spark	21297,25,5000
+oz_dun02,0,0	monster	Hot Molar	21298,60,5000
+oz_dun02,0,0	monster	Volcaring	21299,35,5000
+oz_dun02,0,0	monster	Lava Toad	21300,25,5000
+oz_dun02,0,0	boss_monster	Burning Fang	21301,1,2600000,600000

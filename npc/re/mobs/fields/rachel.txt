@@ -82,12 +82,19 @@ ra_fild08,0,0	monster	Anopheles	1627,15,5000
 //==================================================
 
 //==================================================
-// ra_fild10 - Disabled on Renewal
+// ra_fild10 - Oz Gorge
 //==================================================
+ra_fild10,0,0	monster	Baby Gray Wolf	21324,50,5000
+ra_fild10,0,0	monster	Ashen Goat	21323,60,5000
+ra_fild10,0,0	monster	Rakehand	21296,5,5000
+//TODO -> warp to oz_dun01
 
 //==================================================
-// ra_fild11 - Disabled on Renewal
+// ra_fild11 - Ida Plains
 //==================================================
+ra_fild11,0,0	monster	Baby Gray Wolf	21324,50,5000
+ra_fild11,0,0	monster	Ashen Goat	21323,70,5000
+ra_fild10,0,0	monster	Rakehand	21296,5,5000
 
 //==================================================
 // ra_fild12 - The Plain of Ida
