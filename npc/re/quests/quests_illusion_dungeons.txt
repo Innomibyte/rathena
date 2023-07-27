@@ -11809,3 +11809,676 @@ ant_d02_i,125,73,6	script(CLOAKED)	Vitata#part9	ILL_VITATA,{
 
 ant_d02_i,128,73,6	duplicate(dummy_cloaked_npc)	Quiet Maya#part10	ILL_MAYA
 ant_d02_i,129,73,2	duplicate(dummy_cloaked_npc)	Vitata#part11	ILL_VITATA
+
+//============================================================
+//= Illusion of Labyrinth
+//============================================================
+//Warps
+prt_maze01,99,24,5	script	Twisted Crack#prt_mz	550,{	/*TODO -> Add ice spike effect to npc and ajust coordinates*/
+	mes "Beyond the twisted crack, an unfamiliar labyrinth unfolds.^FF0000If I go in, will I be able to get back out?^000000";
+	if (isbegin_quest(12483) == 2) {
+		next;
+		switch(select("Don't go in.:Go in the crack.")) {
+		case 1:
+			close;
+		case 2:
+			close2;
+			warp "prt_mz03_i",99,26;
+			end;
+		}
+	} else {
+		close;
+	}
+	end;
+}
+
+//Access Quest
+prt_maze01,97,26,5	script	Irene#prt_mz	HIDDEN_WARP_NPC,5,5,{
+	if (isbegin_quest(12482) == 0) {
+		mes "[Irene]";
+		mes "Ahh! Oh, sorry. I'm not a ghost, and I'm not a monster either. Sorry if I startled you.";
+		next;
+		select("What are you?! What do you want?!");
+		mes "[Irene]";
+		mes "Don't point your weapon at me, please. Just listen to me.";
+		next;
+		select("Looks like you're a good spirit. I'll listen.");
+		mes "[Irene]";
+		mes "Thank you! I am Irene, a member of the Priest's Guild. We're in kind of a hard situation right now.";
+		next;
+		select("Did you die during a mission?");
+		mes "[Irene]";
+		mes "Yes, I was looking for a training place, alongside four newbie guildmates, and we found this suspicious crack. None of the guild members that went inside came back.";
+		next;
+		mes "[Irene]";
+		mes "Please do not go inside. Let the guild know of the situation we're in, they're recruiting near Prontera's cathedral. I'll wait for them to come here.";
+		next;
+		switch(select("I can't right now.:That's easy for me!")) {
+		case 1:
+			clear;
+			mes "[Irene]";
+			mes "I suppose that was an unreasonable request from me.";
+			close;
+		case 2:
+			clear;
+			mes "[Irene]";
+			mes "Thank you! Here, take this note. Thank you so much!";
+			close2;
+			warp "prt_fild01",136,365;
+			setquest 12482;
+			end;
+		}
+	} else if (isbegin_quest(12482) == 1) {
+		mes "[Irene]";
+		mes "If you look at the note I gave you, you'll see the location of our guild leader.";
+		close;
+	} else {
+		//Don't know what her dialogue is, at this stage of the quest.
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12488) != 2) {
+        classchange 4_F_ERENE,"Irene#prt_mz",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(12482) == 0" );
+	end;
+}
+
+prontera,213,321,4	script	Esmeralda#prontera	HIDDEN_WARP_NPC,14,14,{
+	mes "[Esmeralda]";
+	mes "What happened? Looks like things are going differently than expected.";
+	next;
+	select("Tell her about the horrible things that happened.");
+	mes "[Esmeralda]";
+	mes "The new members disappeared? Ah, it's our guild's yearly tradition.";
+	next;
+	mes "[Esmeralda]";
+	mes "Thank you for telling me, adventurer. I have to go to them. You should join us too.";
+	completequest 12482;
+	setquest 12483;
+	close2;
+	disablenpc "Esmeralda#prontera";
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12482) == 1 ) {
+        classchange 4_GEFFEN_09,"Esmeralda#prontera",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12482) == 1" );
+	end;
+}
+
+prt_maze01,102,26,4	script	Esmeralda#prt_mz	HIDDEN_WARP_NPC,5,5,{
+	If (isbegin_quest(12483) != 2) {
+		mes "[Esmeralda]";
+		mes "Irene, please don't cry anymore.";
+		next;
+		mes "[Esmeralda]";
+		mes "Fortunately you're under our guild's protection and will be resurrect soon, somehow. I'm sure of it.";
+		next;
+		mes "[Irene]";
+		mes "I'm so sorry.";
+		next;
+		mes "[Esmeralda]";
+		mes "I think your resurrection will be quick, so let's get your body back. Thank you for your hard work.";
+		next;
+		mes "[Esmeralda]";
+		mes "If you don't mind, I have one more thing to ask of you.";
+		switch(select("I don't really care.:Well...ok.")){
+		case 1:
+			clear;
+			mes "[Esmeralda]";
+			mes "Oh well, it's fine. I was thinking we could use your help, but we'll take care of the rest ourselves.";
+			close;
+		case 2:
+			clear;
+			mes "[Esmeralda]";
+			mes "Irene signed a soul contract with our church long ago, so there shouldn't be any problems with her resurrection.";
+			next;
+			mes "[Esmeralda]";
+			mes "But four other people are missing, and these guys haven't signed the contract, so they won't appear in soul form.";
+			next;
+			select("Are these contracts a form of insurance?");
+			mes "[Esmeralda]";
+			mes "Yes. Our guild is made up mostly of priests, so there aren't many deaths, but they do happen from time to time.";
+			next;
+			mes "[Esmeralda]";
+			mes "For that we sign contracts with the saints, to make an insurance ritual that can revive our souls and bodies afer death.";
+			next;
+			mes "[Esmeralda]";
+			mes "Problem is, our four newcomers who've disappered today haven't gone through the process yet.";
+			next;
+			select("Did you come here to fix this issue?");
+			mes "[Esmeralda]";
+			mes "I'll try. Even a trace of their bodies will help. The more complete they are, the easier their resurrection will be.";
+			next;
+			select("(Feels like I'll be the one doing the fixing...)");
+			mes "[Esmeralda]";
+			mes "Priests are trained for this. There are many other parts of the process that aren't easy.";
+			switch(select("This looks dagerous.:It's fine, I'll help.")) {
+			case 1:
+				clear;
+				mes "[Esmeralda]";
+				mes "Oh well, it's fine. I was thinking we could use your help, but we'll take care of the rest ourselves.";
+				close;
+			case 2:
+				clear;
+				mes "[Esmeralda]";
+				mes "Thank you. If you see anything important about our four guild members, please let me know. Perhaps you'll find traces of them in the twisted crack.";
+				completequest 12483;
+				setquest 12484;
+				setquest 12485;
+				setquest 12486;
+				setquest 12487;
+				close;
+			}
+		}
+	} else if (isbegin_quest(12484) == 2 && isbegin_quest(12485) == 2 && isbegin_quest(12486) == 2 && isbegin_quest(12487) == 2) {
+		mes "[Esmeralda]";
+		mes "Oh thank you very much. I was about to give up, but you were able to bring back all of the newcomers.";
+		next;
+		select("(I just collected the bodies...)");
+		mes "[Esmeralda]";
+		mes "Thank you very much. I'll call out our guild member's souls for now. Until the resurrection is ready, I think it'll be a lot better than returning to the church.";
+		next;
+		mes "[Esmeralda]";
+		mes "Also, the resurrection process for the souls isn't something we show to non guild members. Could leave the dungeon for a bit?";
+		next;
+		switch(select("Can't I watch?:Sure, I'll leave.")) {
+		case 1:
+			clear;
+			mes "[Esmeralda]";
+			mes "I can't show this to outsiders.";
+			close;
+		case 2:
+			clear;
+			mes "[Esmeralda]";
+			mes "Thank you for your consideration. I'll warp you out for a bit.";
+			close2;
+			warp "prt_fild01",136,365;
+			completequest 12488;
+			setquest 12489;
+			end;
+		}
+	} else {
+		mes "[Esmeralda]";
+		mes "Thank you. If you see anything important about our four guild members, please let me know. Perhaps you'll find traces of them in the twisted crack.";
+		close;
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12483) >= 0 && isbegin_quest(12488) != 2) {
+        classchange 4_GEFFEN_09,"Esmeralda#prt_mz",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12483) == 1" );
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12484) == 2 && isbegin_quest(12485) == 2 && isbegin_quest(12486) == 2 && isbegin_quest(12487) == 2" );
+	end;
+}
+
+prt_mz03_i,106,104,4	script	Andrea#prt_maze_i	HIDDEN_WARP_NPC,7,7,{
+	mes "^0000FFI've found Andrea's remains. Should I collect them?^000000";
+	next;
+	switch(select("Stop:Collect")) {
+	case 1:
+		clear;
+		mes "^0000FFI've aborted the collection.^000000";
+		close;
+	case 2:
+		progressbar_npc "rgb(0, 255, 0)",5,"Andrea#prt_maze_i";
+		close2;
+		disablenpc "Andrea#prt_maze_i";
+		completequest 12484;
+		if (isbegin_quest(12485) == 2 && isbegin_quest(12486) == 2 && isbegin_quest(12487) == 2) {
+			warp "prt_fild01",136,365;
+			setquest 12488;
+		}
+		end;
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12484) == 1 ) {
+        classchange 4_M_ANDREA_D,"Andrea#prt_maze_i",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12484) == 1" );
+	end;
+}
+
+prt_mz03_i,10,18,3	script	Anes#prt_maze_i	HIDDEN_WARP_NPC,7,7,{
+	mes "^0000FFI've found Anes' remains. Should I collect them?^000000";
+	next;
+	switch(select("Stop:Collect")) {
+	case 1:
+		clear;
+		mes "^0000FFI've aborted the collection.^000000";
+		close;
+	case 2:
+		progressbar_npc "rgb(0, 255, 0)",5,"Anes#prt_maze_i";
+		close2;
+		disablenpc "Anes#prt_maze_i";
+		completequest 12485;
+		if (isbegin_quest(12484) == 2 && isbegin_quest(12486) == 2 && isbegin_quest(12487) == 2) {
+			warp "prt_fild01",136,365;
+			setquest 12488;
+		}
+		end;
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12485) == 1 ) {
+        classchange 4_F_ANES_D,"Anes#prt_maze_i",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12485) == 1" );
+	end;
+}
+
+prt_mz03_i,135,68,5	script	Silvano#prt_maze_i	HIDDEN_WARP_NPC,7,7,{
+	mes "^0000FFI've found Silvano's remains. Should I collect them?^000000";
+	next;
+	switch(select("Stop:Collect")) {
+	case 1:
+		clear;
+		mes "^0000FFI've aborted the collection.^000000";
+		close;
+	case 2:
+		progressbar_npc "rgb(0, 255, 0)",5,"Silvano#prt_maze_i";
+		close2;
+		disablenpc "Silvano#prt_maze_i";
+		completequest 12486;
+		if (isbegin_quest(12484) == 2 && isbegin_quest(12485) == 2 && isbegin_quest(12487) == 2) {
+			warp "prt_fild01",136,365;
+			setquest 12488;
+		}
+		end;
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12486) == 1 ) {
+        classchange 4_M_SILVANO_D,"Silvano#prt_maze_i",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12486) == 1" );
+	end;
+}
+
+prt_mz03_i,183,26,3	script	Cecilia#prt_maze_i	HIDDEN_WARP_NPC,7,7,{
+	mes "^0000FFI've found Cecilia's remains. Should I collect them?^000000";
+	next;
+	switch(select("Stop:Collect")) {
+	case 1:
+		clear;
+		mes "^0000FFI've aborted the collection.^000000";
+		close;
+	case 2:
+		progressbar_npc "rgb(0, 255, 0)",5,"Cecilia#prt_maze_i";
+		close2;
+		disablenpc "Cecilia#prt_maze_i";
+		completequest 12487;
+		if (isbegin_quest(12484) == 2 && isbegin_quest(12485) == 2 && isbegin_quest(12486) == 2) {
+			warp "prt_fild01",136,365;
+			setquest 12488;
+		}
+		end;
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12487) == 1 ) {
+        classchange 4_F_CECILIA_D,"Cecilia#prt_maze_i",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12487) == 1" );
+	end;
+}
+
+//Daily + weekly quests
+prt_maze01,97,21,0	script	Andrea#prt_maze	HIDDEN_WARP_NPC,14,14,{
+	if ( isbegin_quest(12489) == 1 ) {
+		mes "[Andrea]";
+		mes "I've been told what you've done by our guild leader, Esmeralda. You've saved all of us.";
+		next;
+		select("I didn't do much.");
+		mes "[Andrea]";
+		mes "You're too humble. I wasn't sure if our spirits could be recovered, with the state we were in.";
+		next;
+		select("Where did Esmeralda go?");
+		mes "[Andrea]";
+		mes "Oh, she had to prepare for other guild members coming back to the guild. She'll be back at the labyrinth's entrance soon.";
+		next;
+		mes "[Andrea]";
+		mes "Also, she's told me to ask you, "+strcharinfo(0)+", if wouldn't mind acting a guest guild member for the time being.";
+		next;
+		mes "[Andrea]";
+		mes "There isn't enough manpower to raise funds for our resurrection, so this is what we have to do now.";
+		next;
+		mes "[Andrea]";
+		mes "If you can clear the twisted labyrinth, you'll be able to revive us. "+strcharinfo(0)+", you're the only one we can rely on with this task right now.";
+		next;
+		mes "[Andrea]";
+		mes ""+strcharinfo(0)+", can you act a guest guild member to help us out?";
+		switch(select("That's asking too much.:Are there any benefits?")) {
+		case 1:
+			clear;
+			mes "[Andrea]";
+			mes "Ah yes, I did think it would be too much to ask. I'm sorry.";
+			close;
+		case 2:
+			clear;
+			mes "[Andrea]";
+			mes "Even though we're only souls right now, we've gathered a lot of knowledge about the twisted labyrinth.";
+			next;
+			mes "[Andrea]";
+			mes "I'm going to assign you a few tasks to do whithin the labyrinth, and we'll compensate you for it. So what do you say? Would you like to be a guest guild member?";
+			next;
+			switch(select("I can't do it.:Let's do it!")) {
+			case 1:
+				clear;
+				mes "[Andrea]";
+				mes "Ah yes, I did think it would be too much to ask. I'm sorry.";
+				close;
+			case 2:
+				clear;
+				mes "[Andrea]";
+				mes "Thank you so much! Starting now we'll ask "+strcharinfo(0)+" to explore the twisted labyrinth on behalf of our guild.";
+				completequest 12489;
+				setquest 12492;
+				close;
+			}
+		}
+	} else if ( isbegin_quest(12489) == 2 ) {
+		switch( checkquest(12490,PLAYTIME) ) {
+		case -1:
+			break;
+		case 0:
+		case 1:
+			mes "[Andrea]";
+			mes "If you've completed your current quests, please talk to Silvano.";
+			close;
+		case 2:
+			erasequest 12490;
+			break;
+		}
+		mes "[Andrea]";
+		mes "I have several training requests for you, "+strcharinfo(0)+". Would you like to start all of them?";
+		next;
+		switch(select("Cancel:Accept requests")) {
+		case 1:
+			clear;
+			mes "[Andrea]";
+			mes "If you'd like to accept the training requests, please talk to me again.";
+			close;
+		case 2:
+			clear;
+			setquest 12470;
+			setquest 12471;
+			setquest 12472;
+			setquest 12473;
+			setquest 12474;
+			setquest 12475;
+			setquest 12476;
+			setquest 12477;
+			setquest 12490;
+			mes "[Andrea]";
+			mes "Please do you best, as always. Thank you very much.";
+			close;
+		}
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12488) == 2 ) {
+        classchange 4_M_ANDREA,"Andrea#prt_maze",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_DAILYQUEST, QMARK_YELLOW, "checkquest(12490,PLAYTIME) == -1 || checkquest(12490,PLAYTIME) == 2" );
+	end;
+}
+
+prt_maze01,97,27,5	script	Anes#prt_maze	HIDDEN_WARP_NPC,14,14,{
+	if ( isbegin_quest(12489) == 1 ) {
+		mes "[Anes]";
+		mes "We are in your debt, "+strcharinfo(0)+". Andrea has a message for you from our guild leader.";
+		close;
+	} else if ( isbegin_quest(12489) == 2 ) {
+		switch( checkquest(12491,PLAYTIME) ) {
+		case -1:
+			break;
+		case 0:
+		case 1:
+			mes "[Anes]";
+			mes "It is not time yet, to ask for new requests. Please complete the previous one first and wait for the next one.";
+			close;
+		case 2:
+			erasequest 12491;
+			break;
+		}
+		mes "[Anes]";
+		mes "I can only give you one request per week. Do you want to prepare for it now?";
+		next;
+		switch(select("Not now.:Start quest.")) {
+		case 1:
+			clear;
+			mes "[Anes]";
+			mes "When you're ready to receive the request, come to me again.";
+			close;
+		case 2:
+			clear;
+			mes "[Anes]";
+			mes "I hope you have enough time to finish the request.";
+			setquest callfunc("F_Rand",12478,12479,12480,12481); //Don't know if this is supposed to random or manually changed every week.
+			setquest 12491;
+			close;
+		}
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12488) == 2 ) {
+        classchange 4_F_ANES,"Anes#prt_maze",bc_self;
+    end;
+    }
+
+OnInit:
+	questinfo( QTYPE_DAILYQUEST, QMARK_YELLOW, "checkquest(12491,PLAYTIME) == -1 || checkquest(12491,PLAYTIME) == 2" );
+	end;
+}
+
+prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
+	if ( isbegin_quest(12489) == 1 ) {
+		mes "[Silvano]";
+		mes "We are in your debt, "+strcharinfo(0)+". Andrea has a message for you from our guild leader.";
+		close;
+	} else if ( isbegin_quest(12489) == 2 ) {
+		mes "[Silvano]";
+		mes "If you've completed a request, I'll give you the proper compensation for it. Do you want to get your rewards now?";
+		next;
+		switch(select("I'll wait a little.: Get rewards.")) {
+		case 1:
+			clear;
+			mes "[Silvano]";
+			mes "Ok, I'll wait for you.";
+			close;
+		case 2:
+			@rc = 0;
+			if (checkquest(12470,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Baphomet Jr. hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25271,1;
+				completequest 12470;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12471,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Ghostring hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25271,1;
+				completequest 12471;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12472,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Hunter Fly hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25271,1;
+				completequest 12472;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12473,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Killer Mantis hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25271,1;
+				completequest 12473;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12474,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Mantis hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25281,1;
+				completequest 12474;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12475,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Poporing hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25282,1;
+				completequest 12475;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12476,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Sidewinder hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25283,1;
+				completequest 12476;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12477,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Stem Worm hunt^000000";
+				getexp 1750000,1137500;
+				getitem 25284,1;
+				completequest 12477;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12478,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Andrea hunt^000000";
+				getexp 2500000,1625000;
+				getitem 25281,3;
+				completequest 12478;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12479,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Anes hunt^000000";
+				getexp 2500000,1625000;
+				getitem 25282,3;
+				completequest 12479;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12480,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Silvano hunt^000000";
+				getexp 2500000,1625000;
+				getitem 25283,3;
+				completequest 12480;
+				next;
+				@rc = @rc++;
+			}
+			if (checkquest(12481,HUNTING) == 2) {
+				mes "[Silvano]";
+				mes "You've completed the ^0000FFChaos Cicilia hunt^000000";
+				getexp 2500000,1625000;
+				getitem 25284,3;
+				completequest 12481;
+				next;
+				@rc = @rc++;
+			}
+			if (@rc == 0) {
+				mes "[Silvano]";
+				mes "You haven't completed any request. Please come back after you've completed at least one request.";
+				close;
+			} else {
+				mes "[Silvano]";
+				mes "You've been rewarded for your completed requests.";
+				close;
+			}
+		}	
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12488) == 2 ) {
+        classchange 4_M_SILVANO,"Silvano#prt_maze",bc_self;
+    end;
+    }
+}
+
+prt_maze01,101,21,1	script	Cecilia#prt_maze	HIDDEN_WARP_NPC,14,14,{
+	if ( isbegin_quest(12489) == 1 ) {
+		mes "[Cecilia]";
+		mes "We are in your debt, "+strcharinfo(0)+". Andrea has a message for you from our guild leader.";
+		close;
+	} else if ( isbegin_quest(12489) == 2 ) {
+		mes "[Cecilia]";
+		mes "Is there anything I can help you with?";
+		next;
+		switch(select("Cancel:Could send me out of here?")) {
+		case 1:
+			clear;
+			mes "[Cecilia]";
+			mes "I'm sorry that I can't help you.";
+			close;
+		case 2:
+			close2;
+			warp "prt_fild01",136,365;
+			end;
+		}
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12488) == 2 ) {
+        classchange 4_F_CECILIA,"Cecilia#prt_maze",bc_self;
+    end;
+    }
+}

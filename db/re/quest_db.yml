@@ -1404,21 +1404,21 @@ Body:
     TimeLimit: 4h
   - Id: 3455
     Title: Illusion Investigation Team - Machoko
-  # - Id: 3456
-    # Title: Illusion of Teddy Bear 100 Kills
-    # Targets:
-      # - Id: 1
-        # Count: 100
-        # Location: ein_d02_i
-        # MapMobTargets:
-          # ILL_TEDDY_BEAR_B: true
-          # ILL_MINERAL: true
-          # ILL_PITMAN: true
-          # ILL_TEDDY_BEAR_R: true
-          # ILL_TEDDY_BEAR_Y: true
-          # ILL_TEDDY_BEAR_W: true
-          # ILL_OBSIDIAN: true
-          # ILL_TEDDY_BEAR_G: true
+  - Id: 3456
+    Title: Illusion of Teddy Bear 100 Kills
+    Targets:
+      - Id: 1
+        Count: 100
+        Location: ein_d02_i
+        MapMobTargets:
+          ILL_TEDDY_BEAR_B: true
+          ILL_MINERAL: true
+          ILL_PITMAN: true
+          ILL_TEDDY_BEAR_R: true
+          ILL_TEDDY_BEAR_Y: true
+          ILL_TEDDY_BEAR_W: true
+          ILL_OBSIDIAN: true
+          ILL_TEDDY_BEAR_G: true
   - Id: 3457
     Title: Illusion of Teddy Bear 100 Kills - Standby
     TimeLimit: 4h
@@ -9143,9 +9143,90 @@ Body:
   - Id: 12461
     Title: The aftereffects of powerful death
     TimeLimit: 3d 4h
+  - Id: 12470
+    Title: Andrea's Revenge I
+    Targets:
+      - Mob: ILL_BAPHOMET_J
+        Count: 5
+  - Id: 12471
+    Title: Andrea's Revenge II
+    Targets:
+      - Mob: ILL_GHOSTRING
+        Count: 2
+  - Id: 12472
+    Title: Anes' Revenge I
+    Targets:
+      - Mob: ILL_HUNTER_FLY
+        Count: 5
+  - Id: 12473
+    Title: Anes' Revenge II
+    Targets:
+      - Mob: ILL_KILLER_MANTIS
+        Count: 5
+  - Id: 12474
+    Title: Silvano's Revenge I
+    Targets:
+      - Mob: ILL_MANTIS
+        Count: 5
+  - Id: 12475
+    Title: Silvano's Revenge II
+    Targets:
+      - Mob: ILL_POPORING
+        Count: 5
+  - Id: 12476
+    Title: Cecilia's Revenge I
+    Targets:
+      - Mob: ILL_SIDE_WINDER
+        Count: 5
+  - Id: 12477
+    Title: Cecilia's Revenge II
+    Targets:
+      - Mob: ILL_STEM_WORM
+        Count: 5
+  - Id: 12478
+    Title: Ideology Purification
+    Targets:
+      - Mob: ILL_ANDREA
+        Count: 1
+  - Id: 12479
+    Title: Ideology Purification
+    Targets:
+      - Mob: ILL_ANES
+        Count: 1
+  - Id: 12480
+    Title: Ideology Purification
+    Targets:
+      - Mob: ILL_SILVANO
+        Count: 1
+  - Id: 12481
+    Title: Ideology Purification
+    Targets:
+      - Mob: ILL_CECILIA
+        Count: 1
+  - Id: 12482
+    Title: The Disappearance of a Colleague
+  - Id: 12483
+    Title: Continue Check
+  - Id: 12484
+    Title: Look for the Apprentices' Remains
+  - Id: 12485
+    Title: Look for the Apprentices' Remains
+  - Id: 12486
+    Title: Look for the Apprentices' Remains
+  - Id: 12487
+    Title: Look for the Apprentices' Remains
+  - Id: 12488
+    Title: Report Results
+  - Id: 12489
+    Title: Become a Guest Guild Member
   - Id: 12490
-    Title: Receive today's mission
+    Title: Receive Today's Mission
     TimeLimit: 4h
+  - Id: 12491
+    Title: Receive this Week's Mission
+    TimeLimit: 7d 4h
+  - Id: 12492
+    Title: Esmeralda
   - Id: 12493
     Title: The aftereffect of the challenge
     TimeLimit: 3d 4h
@@ -12780,3 +12861,5 @@ Body:
   - Id: 62238
     Title: Midgardian Mercenary timer
     TimeLimit: +3h
+  - Id: 62239
+    Title: Dummy Quest

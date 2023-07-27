@@ -1737,3 +1737,76 @@ OnClock0000:
 		npcshopupdate "market_resonance_stone",100004,2000000,99999;
 	end;
 }
+
+//============================================================
+//= Illusion of Labyrinth
+//============================================================
+prt_fild01,141,367,4	script	Esmeralda#barter	HIDDEN_WARP_NPC,14,14,{
+	if (isbegin_quest(12492) == 1) {
+		mes "[Esmeralda]";
+		mes "I haven't said goodbye yet. Are you currently a guest guild member?";
+		next;
+		switch(select("Yes I am.:Does it matter?")) {
+		case 1:
+			clear;
+			mes "[Esmeralda]";
+			mes "Good choice, it will help us a lot.";
+			next;
+			select("Why didn't you send the other guild members back?");
+			mes "[Esmeralda]";
+			mes "There's a reason. The newcomers haven't signed up for the patronage yet, so there's not insurance contract for them. I'm currently hanging around Prontera, trying to raise enough money for their resurrection.";
+			next;
+			mes "[Esmeralda]";
+			mes "For the time being, I thought it would be safe for me to stay here. I usually don't show myself to others, except to those who've helped me before.";
+			next;
+			mes "[Esmeralda]";
+			mes "The guild's short on funds right now. I think it'll take quite a while for them to be resurrected, so I'll stop operating at the guild and do business here.";
+			next;
+			select("What kind of business?");
+			mes "[Esmeralda]";
+			mes "As you know by now, these new dungeons have been appearing all over the continent and they come with a valuable stone called a 'Illusion Stone'. That's a pretty good thing for us.";
+			next;
+			mes "[Esmeralda]";
+			mes "I've heard that there's a guild that started exploring this dungeon first. I also heard that there's illusion equipment coming out of there.";
+			next;
+			mes "[Esmeralda]";
+			mes "I'll try to upgrade the equipment you get from the labyrinth, but of course I'll need materials and illusion stones.";
+			next;
+			mes "[Esmeralda]";
+			mes "Even if you struggle for a few months, maybe the other guild members will be able to raise enough funds on their own. That's the best outcome for them.";
+			next;
+			select("Is that everything?");
+			mes "[Esmeralda]";
+			mes "Well, there are other places to make money. I'll skip the explanation for now.";
+			next;
+			mes "[Esmeralda]";
+			mes "Anyway, I'll see you as a guild member and, perhaps as a shopkeeper next time.";
+			completequest 12492;
+			close;
+		case 2:
+			clear;
+			mes "[Esmeralda]";
+			mes "Yes, it does."; // PLACEHOLDER cuz I forgot to take a screenshot of the actual dialogue... :P
+			close;
+		} 
+	} Else {
+		mes "[Esmeralda]";
+		mes "If you want any of the equipment listed on the shop, you can bring the required materials from the labyrinth.";
+		next;
+		switch(select("Weapon Shop:Equipment Shop")) {
+		clear;
+		mes "[Esmeralda]";
+		mes "You won't be dispponted.";
+		close2;
+		case 1: callshop "barter_ill_labyrinth_W"; end;
+		case 2: callshop "barter_ill_labyrinth_E"; end;
+		}
+	}
+	end;
+
+OnTouch:
+    if ( isbegin_quest(12492) >= 0 ) {
+        classchange 4_GEFFEN_09,"Esmeralda#barter",bc_self;
+    end;
+    }
+}
