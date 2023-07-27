@@ -12365,7 +12365,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Mantis hunt^000000";
 				getexp 1750000,1137500;
-				getitem 25281,1;
+				getitem 25781,1;
 				completequest 12474;
 				next;
 				@rc = @rc++;
@@ -12374,7 +12374,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Poporing hunt^000000";
 				getexp 1750000,1137500;
-				getitem 25282,1;
+				getitem 25782,1;
 				completequest 12475;
 				next;
 				@rc = @rc++;
@@ -12383,7 +12383,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Sidewinder hunt^000000";
 				getexp 1750000,1137500;
-				getitem 25283,1;
+				getitem 25783,1;
 				completequest 12476;
 				next;
 				@rc = @rc++;
@@ -12392,7 +12392,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Stem Worm hunt^000000";
 				getexp 1750000,1137500;
-				getitem 25284,1;
+				getitem 25784,1;
 				completequest 12477;
 				next;
 				@rc = @rc++;
@@ -12401,7 +12401,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Andrea hunt^000000";
 				getexp 2500000,1625000;
-				getitem 25281,3;
+				getitem 25781,3;
 				completequest 12478;
 				next;
 				@rc = @rc++;
@@ -12410,7 +12410,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Anes hunt^000000";
 				getexp 2500000,1625000;
-				getitem 25282,3;
+				getitem 25782,3;
 				completequest 12479;
 				next;
 				@rc = @rc++;
@@ -12419,7 +12419,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Silvano hunt^000000";
 				getexp 2500000,1625000;
-				getitem 25283,3;
+				getitem 25783,3;
 				completequest 12480;
 				next;
 				@rc = @rc++;
@@ -12428,7 +12428,7 @@ prt_maze01,101,27,4	script	Silvano#prt_maze	HIDDEN_WARP_NPC,14,14,{
 				mes "[Silvano]";
 				mes "You've completed the ^0000FFChaos Cicilia hunt^000000";
 				getexp 2500000,1625000;
-				getitem 25284,3;
+				getitem 25784,3;
 				completequest 12481;
 				next;
 				@rc = @rc++;
