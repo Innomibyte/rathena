@@ -39188,6 +39188,7 @@ Body:
     CastTime: 800
     Cooldown: 150
     AfterCastActDelay: 500
+    Cooldown: 150
     FixedCastTime: 200
     Requires:
       SpCost: 80
@@ -39287,7 +39288,17 @@ Body:
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 500
-    Duration1: 5000
+    Duration1:
+      - Level: 1
+        Time: 3000
+      - Level: 2
+        Time: 3500
+      - Level: 3
+        Time: 4000
+      - Level: 4
+        Time: 4500
+      - Level: 5
+        Time: 5000
     Cooldown: 2500
     Requires:
       SpCost:
@@ -39348,7 +39359,17 @@ Body:
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 500
-    Duration1: 5000
+    Duration1:
+      - Level: 1
+        Time: 3000
+      - Level: 2
+        Time: 3500
+      - Level: 3
+        Time: 4000
+      - Level: 4
+        Time: 4500
+      - Level: 5
+        Time: 5000
     Cooldown: 2500
     Requires:
       SpCost:
@@ -39409,7 +39430,17 @@ Body:
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 500
-    Duration1: 5000
+    Duration1:
+      - Level: 1
+        Time: 3000
+      - Level: 2
+        Time: 3500
+      - Level: 3
+        Time: 4000
+      - Level: 4
+        Time: 4500
+      - Level: 5
+        Time: 5000
     Cooldown: 2500
     Requires:
       SpCost:
@@ -39517,7 +39548,17 @@ Body:
     CastCancel: true
     CastTime: 1000
     AfterCastActDelay: 500
-    Duration1: 5000
+    Duration1:
+      - Level: 1
+        Time: 3000
+      - Level: 2
+        Time: 3500
+      - Level: 3
+        Time: 4000
+      - Level: 4
+        Time: 4500
+      - Level: 5
+        Time: 5000
     Cooldown: 2500
     Requires:
       SpCost:

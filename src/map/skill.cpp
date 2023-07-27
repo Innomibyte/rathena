@@ -2176,6 +2176,14 @@ int skill_additional_effect( struct block_list* src, struct block_list *bl, uint
 	case ABC_UNLUCKY_RUSH:
 		sc_start(src, bl, SC_HANDICAPSTATE_MISFORTUNE, 30 + 10 * skill_lv, skill_lv, skill_get_time(skill_id, skill_lv));
 		break;
+	case ABC_CHAIN_REACTION_SHOT:
+		skill_castend_damage_id(src, bl, ABC_CHAIN_REACTION_SHOT_ATK, skill_lv, tick, SD_LEVEL);
+		break;
+	case TR_ROSEBLOSSOM:// Rose blossom seed can only bloom if the target is hit.
+		sc_start4(src, bl, SC_ROSEBLOSSOM, 100, skill_lv, TR_ROSEBLOSSOM_ATK, src->id, 0, skill_get_time(skill_id, skill_lv));
+	case WM_METALICSOUND:
+	case WM_REVERBERATION:
+	case TR_RHYTHMSHOOTING:
 	case TR_METALIC_FURY:
 		status_change_end(bl, SC_SOUNDBLEND);
 		break;
