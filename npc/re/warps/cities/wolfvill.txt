@@ -1,0 +1,12 @@
+//===== rAthena Script =======================================
+//= Wolf Village Warp Script
+//===== Current Version: =====================================
+//= 1.0
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= [Official Conversion]
+//= Warp Points for Wolf Village
+//============================================================
+
+wolfvill,276,25,0	warp	wf_gw01	1,1,gw_fild01,25,101
