@@ -120,10 +120,10 @@ prt_mz03_i,0,0	monster	Chaotic Poporing	20531,12,15000,0,"prt_mz03_i_boss::OnMob
 prt_mz03_i,0,0	monster	Chaotic Stem Worm	20532,12,15000,0,"prt_mz03_i_boss::OnMobDead"
 
 //Not sure how these spawns are supposed to work
-rt_mz03_i,0,0	monster	Chaotic Andrea	20521,1,4000,0,"prt_mz03_i_boss::OnMobDead"
-rt_mz03_i,0,0	monster	Chaotic Anes	20522,1,4000,0,"prt_mz03_i_boss::OnMobDead"
-rt_mz03_i,0,0	monster	Chaotic Silvano	20523,1,4000,0,"prt_mz03_i_boss::OnMobDead"
-rt_mz03_i,0,0	monster	Chaotic Cecilia	20524,1,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Andrea	20521,1,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Anes	20522,1,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Silvano	20523,1,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Cecilia	20524,1,4000,0,"prt_mz03_i_boss::OnMobDead"
 
 //Boss Spawner
 -	script	prt_mz03_i_boss	-1,{
