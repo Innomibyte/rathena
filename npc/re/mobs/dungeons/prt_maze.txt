@@ -105,14 +105,25 @@ prt_maze03,174,187,3,3	monster	Red Mushroom	1085,3,180000,90000
 //==================================================
 // prt_mz03_i - Illusion of Labyrinth
 //==================================================
-prt_mz03_i,0,0	monster	Chaotic Baphomet Jr	20525,15,50000,0,"prt_mz03_i_boss::OnMobDead"
-prt_mz03_i,0,0	monster	Chaotic Side Winder	20526,12,150000,0,"prt_mz03_i_boss::OnMobDead"
-prt_mz03_i,0,0	monster	Chaotic Hunter Fly	20527,12,150000,0,"prt_mz03_i_boss::OnMobDead"
-prt_mz03_i,0,0	monster	Chaotic Mantis	20528,12,150000,0,"prt_mz03_i_boss::OnMobDead"
-prt_mz03_i,0,0	monster	Chaotic Ghostring	20529,5,50000,0,"prt_mz03_i_boss::OnMobDead"
-prt_mz03_i,0,0	monster	Chaotic Killer Mantis	20530,12,150000,0,"prt_mz03_i_boss::OnMobDead"
-prt_mz03_i,0,0	monster	Chaotic Poporing	20531,12,150000,0,"prt_mz03_i_boss::OnMobDead"
-prt_mz03_i,0,0	monster	Chaotic Stem Worm	20532,12,150000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Baphomet Jr	20525,35,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Side Winder	20526,20,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Side Winder	20526,12,15000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Hunter Fly	20527,20,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Hunter Fly	20527,12,15000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Mantis	20528,20,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Mantis	20528,12,15000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Ghostring	20529,12,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Killer Mantis	20530,20,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Killer Mantis	20530,12,15000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Poporing	20531,20,4000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Poporing	20531,12,15000,0,"prt_mz03_i_boss::OnMobDead"
+prt_mz03_i,0,0	monster	Chaotic Stem Worm	20532,12,15000,0,"prt_mz03_i_boss::OnMobDead"
+
+//Not sure how these spawns are supposed to work
+rt_mz03_i,0,0	monster	Chaotic Andrea	20521,1,4000,0,"prt_mz03_i_boss::OnMobDead"
+rt_mz03_i,0,0	monster	Chaotic Anes	20522,1,4000,0,"prt_mz03_i_boss::OnMobDead"
+rt_mz03_i,0,0	monster	Chaotic Silvano	20523,1,4000,0,"prt_mz03_i_boss::OnMobDead"
+rt_mz03_i,0,0	monster	Chaotic Cecilia	20524,1,4000,0,"prt_mz03_i_boss::OnMobDead"
 
 //Boss Spawner
 -	script	prt_mz03_i_boss	-1,{
