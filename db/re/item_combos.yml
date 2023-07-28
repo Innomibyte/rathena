@@ -37333,10 +37333,36 @@ Body:
       bonus2 bSkillFixedCast,"CD_FRAMEN",-500;
   - Combos:
       - Combo:
+          - Hero    # 29509
+          - aegis_312033    # 312033
+    Script: |
+      bonus2 bSkillCooldown,"ABC_DEFT_STAB",-200;
+      bonus2 bSkillCooldown,"ABC_ABYSS_DAGGER",-200;
+  - Combos:
+      - Combo:
+          - Release_Of_Magic    # 29371
+          - aegis_312035    # 312035
+    Script: |
+      bonus2 bSkillCooldown,"IG_CROSS_RAIN",-1000;
+  - Combos:
+      - Combo:
+          - Hero    # 29509
+          - aegis_312036    # 312036
+    Script: |
+      bonus2 bSkillCooldown,"WH_GALESTORM",-200;
+      bonus2 bSkillCooldown,"WH_CRESCIVE_BOLT",-200;
+  - Combos:
+      - Combo:
           - Release_Of_Magic    # 29371
           - aegis_312038    # 312038
     Script: |
       bonus2 bSkillCooldown,"CD_ARBITRIUM",-500;
+  - Combos:
+      - Combo:
+          - Hero    # 29509
+          - aegis_312039    # 312039
+    Script: |
+      bonus2 bSkillCooldown,"SHC_SHADOW_STAB",-500;
   - Combos:
       - Combo:
           - Hero    # 29509

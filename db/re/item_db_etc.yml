@@ -70128,6 +70128,21 @@ Body:
     Name: Latent Release (Archmage II)
     Type: Card
     SubType: Enchant
+  - Id: 312033
+    AegisName: aegis_312033
+    Name: Latent Release (Abyss Chaser II)
+    Type: Card
+    SubType: Enchant
+  - Id: 312035
+    AegisName: aegis_312035
+    Name: Latent Release (Imperial Guard II)
+    Type: Card
+    SubType: Enchant
+  - Id: 312036
+    AegisName: aegis_312036
+    Name: Latent Release (Windhawk II)
+    Type: Card
+    SubType: Enchant
   - Id: 312037
     AegisName: aegis_312037
     Name: Latent Release (Elemental Master II)
@@ -70136,6 +70151,11 @@ Body:
   - Id: 312038
     AegisName: aegis_312038
     Name: Latent Release (Cardinal II)
+    Type: Card
+    SubType: Enchant
+  - Id: 312039
+    AegisName: aegis_312039
+    Name: Latent Release (Shadow Cross II)
     Type: Card
     SubType: Enchant
   - Id: 312040
@@ -72229,6 +72249,14 @@ Body:
             }
          }
       }
+  - Id: 312395
+    AegisName: aegis_312395
+    Name: Protection of Ur
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus2 bAddEle,Ele_All,15;
+      /*TODO rest of effect*/
   - Id: 312398
     AegisName: aegis_312398
     Name: Shinkiro Stone (Garment)
@@ -72528,6 +72556,20 @@ Body:
             }
          }
       }
+  - Id: 312445
+    AegisName: aegis_312445
+    Name: Auto Spell (Chain Lightning)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus3 bAutoSpellWhenHit,"WL_CHAINLIGHTNING",5,20; /*Actual rate unknown*/
+  - Id: 312446
+    AegisName: aegis_312446
+    Name: Magic Ore
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bNoGemStone;
   - Id: 1000000
     AegisName: IDTest_event
     Name: IDTest event
