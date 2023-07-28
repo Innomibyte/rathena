@@ -40479,3 +40479,47 @@ Body:
         bonus bDelayrate,-10;
         bonus2 bSkillAtk,"ASC_METEORASSAULT",100;
       }
+  - Combos:
+      - Combo:
+          - aegis_400470    # 400470 -> Southern Tiara
+          - Book_Of_The_Apo_IL
+    Script: |
+      .@rw = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SG_SUN_WARM",5*(.@rw/2);
+      bonus2 bSkillAtk,"SG_MOON_WARM",5*(.@rw/2);
+      bonus2 bSkillAtk,"SG_STAR_WARM",5*(.@rw/2);
+  - Combos:
+      - Combo:
+          - aegis_400470    # 400470 -> Southern Tiara
+          - Star_Dust_Blade
+      - Combo:
+          - aegis_400470    # 400470 -> Southern Tiara
+          - Star_Dust_Blade_
+    Script: |
+      .@rw = getequiprefinerycnt(EQI_HAND_R);
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_SuperNovice || eaclass()&EAJL_FOURTH && BaseJob == Job_SuperNovice) {
+        skill "RK_IGNITIONBREAK",5;
+        bonus2 bSkillAtk,"RK_IGNITIONBREAK",7*(.@rw/2);
+      }
+  - Combos:
+      - Combo:
+          - aegis_400467    # 400467 -> Southern Tiara
+          - CandyCaneRod
+    Script: |
+      .@rw = getequiprefinerycnt(EQI_HAND_R);
+      if (eaclass()&EAJL_THIRD && BaseJob == Job_SuperNovice || eaclass()&EAJL_FOURTH && BaseJob == Job_SuperNovice) {
+        skill "WL_SOULEXPANSION",5;
+        bonus2 bSkillAtk,"WL_SOULEXPANSION",7*(.@rw/2);
+      }
+  - Combos:
+      - Combo:
+          - aegis_400467    # 400467 -> Northern Tiara
+          - Walking_Stick
+      - Combo:
+          - aegis_400467    # 400467 -> Northern Tiara
+          - Walking_Stick_
+    Script: |
+      .@rw = getequiprefinerycnt(EQI_HAND_R);
+      bonus2 bSkillAtk,"SL_SMA",7*(.@rw/2);
+      bonus2 bSkillAtk,"SP_SPA",7*(.@rw/2);
+      bonus2 bSkillAtk,"SP_SWHOO",7*(.@rw/2);
