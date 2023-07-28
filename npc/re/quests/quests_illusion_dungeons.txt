@@ -12022,7 +12022,7 @@ OnTouch:
 
 OnInit:
 	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12483) == 1" );
-	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12484) == 2 && isbegin_quest(12485) == 2 && isbegin_quest(12486) == 2 && isbegin_quest(12487) == 2" );
+	questinfo( QTYPE_QUEST2, QMARK_YELLOW, "isbegin_quest(12484) == 2 && isbegin_quest(12485) == 2 && isbegin_quest(12486) == 2 && isbegin_quest(12487) == 2 && isbegin_quest(12488) != 2" );
 	end;
 }
 
