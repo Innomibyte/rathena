@@ -40349,3 +40349,133 @@ Body:
       bonus bDex,1;
       bonus bAgi,1;
       bonus bAtkRate,3;
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - Golden_Rod_Robe
+          - Golden_Rod_Shoes
+          - Golden_Rod_Orb
+    Script: |
+      bonus bMatk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus2 bMagicAtkEle,Ele_Wind,20;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bFixedCast,-500;
+        bonus2 bSkillAtk,"WZ_VERMILION",100;
+        bonus2 bSkillAtk,"WL_CHAINLIGHTNING",50;
+      }
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - Aqua_Orb
+          - Aqua_Robe
+          - Aqua_Shoes
+    Script: |
+      bonus bMatk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus2 bMagicAtkEle,Ele_Water,20;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bFixedCast,-500;
+        bonus2 bSkillAtk,"WZ_STORMGUST",100;
+        bonus2 bSkillAtk,"WL_FROSTMISTY",50;
+      }
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - Crimson_Orb
+          - Crimson_Robe
+          - Crimson_Shoes
+    Script: |
+      bonus bMatk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus2 bMagicAtkEle,Ele_Fire,20;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bFixedCast,-500;
+        bonus2 bSkillAtk,"WZ_METEOR",100;
+        bonus2 bSkillAtk,"WL_CRIMSONROCK",50;
+      }
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - Forest_Orb
+          - Forest_Robe
+          - Forest_Shoes
+    Script: |
+      bonus bMatk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus2 bMagicAtkEle,Ele_Earth,20;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bFixedCast,-500;
+        bonus2 bSkillAtk,"WZ_HEAVENDRIVE",100;
+        bonus2 bSkillAtk,"WL_EARTHSTRAIN",50;
+      }
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - Shawl_Of_Judgement
+          - Robe_Of_Judgement
+          - Shoes_Of_Judgement
+    Script: |
+      bonus bMatk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus2 bMagicAtkEle,Ele_Holy,20;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bFixedCast,-500;
+        bonus2 bSkillAtk,"AB_JUDEX",100;
+        bonus2 bSkillAtk,"AB_DUPLELIGHT",50;
+      }
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - Peuz_Seal
+          - Peuz_Greave
+          - Peuz_Manteau
+          - Peuz_Plate
+    Script: |
+      bonus bAtk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus3 bAutoSpell,"RK_STORMBLAST",1,150;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bAspdRate,7;
+        bonus2 bSkillAtk,"RK_STORMBLAST",30;
+      }
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - White_Wing_Brooch
+          - White_Wing_Suits
+          - White_Wing_Boots
+          - White_Wing_Manteau
+    Script: |
+      bonus bAtk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus bAspdRate,7;
+        bonus2 bVariableCastrate,"RA_ARROWSTORM",-100;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bDelayrate,-10;
+        bonus2 bSkillCooldown,"RA_UNLIMIT",-60000;
+      }
+  - Combos:
+      - Combo:
+          - aegis_420226    # 420226 -> Mora Clover
+          - Sabah_Ring
+          - Sabah_Shoes
+          - Sabah_Hood
+          - Sabah_Cloth
+    Script: |
+      bonus bAtk,100;
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=10) {
+        bonus bAspdRate,7;
+        bonus2 bVariableCastrate,"ASC_METEORASSAULT",-100;
+      }
+      if ((getequiprefinerycnt(EQI_ARMOR)+getequiprefinerycnt(EQI_SHOES))>=20) {
+        bonus bDelayrate,-10;
+        bonus2 bSkillAtk,"ASC_METEORASSAULT",100;
+      }
