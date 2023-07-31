@@ -5709,12 +5709,6 @@ static int battle_calc_attack_skill_ratio(struct Damage* wd, struct block_list *
 			skillratio += -100 + 350 + 850 * skill_lv + 5 * sstatus->pow;
 			RE_LVL_DMOD(100);
 			break;
-		case MT_MIGHTY_SMASH:
-			skillratio += -100 + 100 + 300 * skill_lv + 5 * sstatus->pow;
-			if (sc && sc->getSCE(SC_AXE_STOMP))
-				skillratio += 50;
-			RE_LVL_DMOD(100);
-			break;
 		case MT_RUSH_QUAKE:
 			skillratio += -100 + 3600 * skill_lv + 10 * sstatus->pow;
 			if (tstatus->race == RC_FORMLESS || tstatus->race == RC_INSECT)
