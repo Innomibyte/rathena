@@ -13730,7 +13730,6 @@ TIMER_FUNC(skill_castend_id){
 	map_session_data *sd;
 	struct mob_data *md;
 	struct unit_data *ud;
-	status_change *sc = NULL;
 	int flag = 0;
 
 	src = map_id2bl(id);
@@ -13749,6 +13748,7 @@ TIMER_FUNC(skill_castend_id){
 
 	sd = BL_CAST(BL_PC,  src);
 	md = BL_CAST(BL_MOB, src);
+	status_change *sc = status_get_sc(src);
 
 	if( src->prev == NULL ) {
 		ud->skilltimer = INVALID_TIMER;
@@ -13913,9 +13913,8 @@ TIMER_FUNC(skill_castend_id){
 							}
 							break;
 						case WH_CRESCIVE_BOLT:
-							if (sc && sc->getSCE(SC_CRESCIVEBOLT)) {
-								if (sc->getSCE(SC_CRESCIVEBOLT)->val1 >= 3)
-									add_ap += 2;
+							if (sc && sc->getSCE(SC_CRESCIVEBOLT) && sc->getSCE(SC_CRESCIVEBOLT)->val1 >= 3) {
+								add_ap += 2;
 							}
 							break;
 						case SH_HYUN_ROK_CANNON:
@@ -13971,7 +13970,7 @@ TIMER_FUNC(skill_castend_id){
 				else
 					type = SC_STRIPSHIELD;
 
-				if ((sc = status_get_sc(src)) && sc->getSCE(type)) {
+				if (sc && sc->getSCE(type)) {
 					const struct TimerData* timer = get_timer(sc->getSCE(type)->timer);
 
 					if (timer && timer->func == status_change_timer && DIFF_TICK(timer->tick, gettick() + skill_get_time(ud->skill_id, ud->skill_lv)) > 0)
