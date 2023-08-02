@@ -73412,6 +73412,21 @@ Body:
             }
          }
       }
+  - Id: 312417
+    AegisName: aegis_312417
+    Name: Amplified Grudge
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bAspdRate,10;
+  - Id: 312418
+    AegisName: aegis_312418
+    Name: Prayer Bell
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus2 bAddSize,Size_All,10;
+      bonus2 bMagicAddSize,Size_All,10;
   - Id: 312419
     AegisName: aegis_312419
     Name: All Access
@@ -73419,6 +73434,18 @@ Body:
     SubType: Enchant
     Script: |
       bonus bPerfectHitAddRate,100;
+  - Id: 312421
+    AegisName: aegis_312421
+    Name: Ruler of the Farthest
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bHPGainValue,100;
+      bonus bSPGainValue,10;
+      bonus bLongHPGainValue,100;
+      bonus bLongSPGainValue,10;
+      bonus bMagicHPGainValue,100;
+      bonus bMagicSPGainValue,10;
   - Id: 312445
     AegisName: aegis_312445
     Name: Autospell (Chain Lightning)
