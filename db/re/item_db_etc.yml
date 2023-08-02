@@ -73412,6 +73412,13 @@ Body:
             }
          }
       }
+  - Id: 312419
+    AegisName: aegis_312419
+    Name: All Access
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bPerfectHitAddRate,100;
   - Id: 312445
     AegisName: aegis_312445
     Name: Autospell (Chain Lightning)

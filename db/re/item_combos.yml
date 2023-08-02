@@ -43076,3 +43076,46 @@ Body:
       bonus2 bSkillAtk,"SL_SMA",7*(.@rw/2);
       bonus2 bSkillAtk,"SP_SPA",7*(.@rw/2);
       bonus2 bSkillAtk,"SP_SWHOO",7*(.@rw/2);
+  - Combos:
+      - Combo:
+          - Auto_M_Ring_TW
+          - Auto_B_R
+    Script: |
+      bonus2 bSPDrainRate,10,1;
+      bonus2 bAddClass,Class_Boss,15;
+  - Combos:
+      - Combo:
+          - Auto_M_Ring_TW
+          - Auto_B_L
+    Script: |
+      bonus bAtkRate,4;
+  - Combos:
+      - Combo:
+          - Auto_M_Ring_TW
+          - Auto_BC_R
+    Script: |
+      bonus bDelayrate,-5;
+      bonus2 bMagicAddClass,Class_Boss,15;
+  - Combos:
+      - Combo:
+          - Auto_M_Ring_TW
+          - Auto_BC_L
+    Script: |
+      bonus2 bMagicAddEle,Ele_All,6;
+      bonus bFixedCast,-300;
+  - Combos:
+      - Combo:
+          - Old_Moroc_Acc
+          - Marduk_Card
+    Script: |
+      bonus bDelayrate,-8;
+      bonus2 bAddEle,Ele_All,12;
+      bonus2 bMagicAddEle,Ele_All,12;
+  - Combos:
+      - Combo:
+          - Old_Moroc_Acc
+          - Pharaoh_Card
+    Script: |
+      bonus bDelayrate,-15;
+      bonus2 bAddEle,Ele_All,25;
+      bonus2 bMagicAddEle,Ele_All,25;
