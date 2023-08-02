@@ -43366,3 +43366,22 @@ Body:
       bonus bMaxHPrate,50;
       bonus2 bSubEle,Ele_Water,50;
       skill "RG_TUNNELDRIVE",1;
+  - Combos:
+      - Combo:
+          - aegis_410243
+          - aegis_312417
+      - Combo:
+          - aegis_410244
+          - aegis_312417
+    Script: |
+      bonus bPerfectHitAddRate,25;
+      bonus2 bSubRace,RC_Player_Human,5;
+      bonus2 bSubRace,RC_Player_Doram,5;
+  - Combos:
+      - Combo:
+          - aegis_420223
+          - Goddess_of_Abundance
+    Script: |
+      bonus2 bSubRace,RC_Player_Human,3;
+      bonus2 bSubRace,RC_Player_Doram,3;
+      bonus bNoCastCancel;
