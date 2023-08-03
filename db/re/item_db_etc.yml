@@ -13803,7 +13803,7 @@ Body:
       bonus bVariableCastrate,-4;
   - Id: 4816
     AegisName: Sharp3
-    Name: Sharp3
+    Name: Sharp 3
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -13812,7 +13812,7 @@ Body:
       bonus bHit,4;
   - Id: 4817
     AegisName: Sharp2
-    Name: Sharp2
+    Name: Sharp 2
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -13821,7 +13821,7 @@ Body:
       bonus bHit,3;
   - Id: 4818
     AegisName: Sharp1
-    Name: Sharp1
+    Name: Sharp 1
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -14035,7 +14035,7 @@ Body:
       bonus bAspd,2;
   - Id: 4843
     AegisName: Sharp4
-    Name: Sharp4
+    Name: Sharp 4
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -14044,7 +14044,7 @@ Body:
       bonus bHit,5;
   - Id: 4844
     AegisName: Sharp5
-    Name: Sharp5
+    Name: Sharp 5
     Type: Card
     SubType: Enchant
     Buy: 20
