@@ -43385,3 +43385,56 @@ Body:
       bonus2 bSubRace,RC_Player_Human,3;
       bonus2 bSubRace,RC_Player_Doram,3;
       bonus bNoCastCancel;
+  - Combos:
+      - Combo:
+          - aegis_460052
+          - Striking_hat
+    Script: |
+      bonus2 bSubClass,Class_Normal,20;
+      bonus2 bSubClass,Class_Boss,20;
+  - Combos:
+      - Combo:
+          - aegis_460052
+          - Striking_Mail
+    Script: |
+      bonus bLongAtkRate,2*getequiprefinerycnt(EQI_ARMOR);
+  - Combos:
+      - Combo:
+          - aegis_460052
+          - Striking_Mikoshi
+    Script: |
+      bonus2 bSubEle,Ele_Neutral,10;
+  - Combos:
+      - Combo:
+          - aegis_460052
+          - Striking_Shoes
+    Script: |
+      bonus2 bAddClass,Class_All,4*getequiprefinerycnt(EQI_SHOES);
+  - Combos:
+      - Combo:
+          - aegis_460052
+          - Hero
+    Script: |
+      bonus bLongAtkRate,15;
+  - Combos:
+      - Combo:
+          - aegis_480319
+          - aegis_311439
+    Script: |
+      bonus bDelayrate,-25;
+  - Combos:
+      - Combo:
+          - aegis_480319
+          - aegis_311883
+    Script: |
+      bonus bAspdRate,20;
+  - Combos:
+      - Combo:
+          - aegis_490380
+          - Faith_Of_Yggdrasil
+      - Combo:
+          - aegis_490381
+          - Faith_Of_Yggdrasil
+    Script: |
+      bonus bAllStats,10;
+      bonus bSpeedAddRate,10; /*Dunno about the rate*/
