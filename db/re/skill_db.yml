@@ -41210,11 +41210,11 @@ Body:
     DamageFlags:
       IgnoreFlee: true
       Splash: true
-    SplashArea: 3
     Range: 9
     Hit: Multi_Hit
     HitCount: -2
     Element: Weapon
+    SplashArea: 3
     Requires:
       SpCost: 1
   - Id: 5383
