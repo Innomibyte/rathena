@@ -34981,6 +34981,7 @@ Body:
     CastCancel: true
     Duration1: 20000
     Cooldown: 500
+    FixedCastTime: 500
     Requires:
       SpCost: 40
       SpiritSphereCost: 5

@@ -4764,20 +4764,6 @@ int status_calc_pc_sub(map_session_data* sd, uint8 opt)
 			sd->bonus.short_attack_atk_rate += 5 * sc->getSCE( SC_RUSH_QUAKE2 )->val1;
 			sd->bonus.long_attack_atk_rate += 5 * sc->getSCE( SC_RUSH_QUAKE2 )->val1;
 		}
-
-		if (sc->getSCE(SC_BO_HELL_DUSTY)) {
-			sd->bonus.long_attack_atk_rate += 20;
-			sd->right_weapon.addrace[RC_FORMLESS] += 20;
-			sd->right_weapon.addrace[RC_PLANT] += 20;
-			if( !battle_config.left_cardfix_to_right ) {
-				sd->left_weapon.addrace[RC_FORMLESS] += 20;
-				sd->left_weapon.addrace[RC_PLANT] += 20;
-			}
-		}
-		if (sc->getSCE(SC_UNLIMIT))
-			sd->bonus.long_attack_atk_rate += sc->getSCE(SC_UNLIMIT)->val2;
-		if (sc->getSCE(SC_HIDDEN_CARD))
-			sd->bonus.long_attack_atk_rate += sc->getSCE(SC_HIDDEN_CARD)->val3;
 		if (sc->getSCE(SC_DEADLY_DEFEASANCE))
 			sd->special_state.no_magic_damage = 0;
 		if (sc->getSCE(SC_CLIMAX_DES_HU))
@@ -12688,11 +12674,9 @@ int status_change_start(struct block_list* src, struct block_list* bl,enum sc_ty
 		case SC_RELIEVE_ON:
 			val2 = min(10*val1, 99); // % damage received reduced from 10 * skill lvl up to 99%
 			break;
-		case SC_VIGOR: {
-				uint8 hp_loss[10] = { 100, 90, 80, 70, 60, 50, 40, 30, 20, 10 };
-
-				val2 = hp_loss[val1- 1];
-			}
+		case SC_VIGOR:
+			val2 = 100 - 10 * (val1 - 1); // HP consumption with each attack is reduced by skill lvl
+			val2 = max(val2, 0);
 			break;
 		case SC_POWERFUL_FAITH:
 			val2 = 5 + 5 * val1;// ATK Increase
