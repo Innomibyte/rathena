@@ -36999,7 +36999,7 @@ Body:
     Element: Holy
     CastCancel: true
     CastTime: 2000
-    Cooldown: 500
+    Cooldown: 5000
     FixedCastTime: 1000
     Requires:
       SpCost:
@@ -37112,6 +37112,7 @@ Body:
     Element: Holy
     GiveAp: 7
     CastCancel: true
+    CastTime: 1000
     AfterCastActDelay: 150
     Duration1: 4500
     Cooldown: 4500
